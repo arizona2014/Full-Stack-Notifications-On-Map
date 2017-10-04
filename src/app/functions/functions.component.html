@@ -1,0 +1,139 @@
+<div class="container">
+    <a (click)="schimba($event);" href="#"><img src="../assets/images/sgel.png" class="logo-top"></a>
+    <div id="dropdown"><div class="dropdownActions-wrapper menu-link-active">
+        <div id="BTN_filters" (click)="toggleMainTabs($event);" class="imgFilters-wrapper " title="Filtres" >&nbsp;</div>
+        <div id="BTN_pointer" (click)="toggleMainTabs($event);" class="imgPointer-wrapper link-active" title="Semnaleaza Problema" >&nbsp;</div>
+
+        <div class="popupContainer">
+            <section class="popupBody">
+                <div id="DIV_filters" style="display: none;">
+                    <header class="popupHeader">
+                        <span class="header_title">Liste des notifications</span>
+                        <span class="modal_close" onclick="menuClose_Click();"><img src="../assets/images/x-close.png"></span>
+                    </header>
+
+                    <div class="popup-content">
+                        <select multiple="multiple" id="categories" style="display: none;">
+                            <option value="1">Asistență socială</option>
+                            <option value="2">Depozitări deșeuri</option>
+                            <option value="3">Construcții / lucrări neautorizate; organizare şantier</option>
+                            <option value="4">Iluminat public</option>
+                            <option value="16">Parcări neregulamentare</option>
+                            <option value="5">Parcări / Parking-uri</option>
+                            <option value="6">Persoane fără adăpost sau care apelează la mila publicului</option>
+                            <option value="7">Salubritate</option>
+                            <option value="8">Spații verzi / parcuri</option>
+                            <option value="9">Străzi / Alei / Trotuare / Poduri</option>
+                            <option value="10">Taxe și impozite</option>
+                            <option value="11">Semnalizare rutieră</option>
+                            <option value="12">Tulburarea liniștii publice</option>
+                            <option value="14">Rețele de apă / canalizare (CAS)</option>
+                            <option value="15">Transport public (CTP)</option>
+                            <option value="13">Altele</option>
+                        </select>
+                        <div class="ms-parent " style="width: auto">
+                            <button type="button" class="ms-choice">
+                                <span class="placeholder">Type: Tous</span>
+                                <div></div>
+                            </button>
+                            <div class="ms-drop bottom">
+                                <ul style="max-height: 270px;">
+                                    <li class="" style="false"><label class=""><input type="checkbox" data-name="selectItem" value="1"><span>Asistență socială</span></label></li>
+                                    <li class="" style="false"><label class=""><input type="checkbox" data-name="selectItem" value="2"><span>Depozitări deșeuri</span></label></li>
+                                    <li class="" style="false"><label class=""><input type="checkbox" data-name="selectItem" value="3"><span>Construcții / lucrări neautorizate; organizare şantier</span></label></li>
+                                    <li class="" style="false"><label class=""><input type="checkbox" data-name="selectItem" value="4"><span>Iluminat public</span></label></li>
+                                    <li class="" style="false"><label class=""><input type="checkbox" data-name="selectItem" value="16"><span>Parcări neregulamentare</span></label></li>
+                                    <li class="" style="false"><label class=""><input type="checkbox" data-name="selectItem" value="5"><span>Parcări / Parking-uri</span></label></li>
+                                    <li class="" style="false"><label class=""><input type="checkbox" data-name="selectItem" value="6"><span>Persoane fără adăpost sau care apelează la mila publicului</span></label></li>
+                                    <li class="" style="false"><label class=""><input type="checkbox" data-name="selectItem" value="7"><span>Salubritate</span></label></li>
+                                    <li class="" style="false"><label class=""><input type="checkbox" data-name="selectItem" value="8"><span>Spații verzi / parcuri</span></label></li>
+                                    <li class="" style="false"><label class=""><input type="checkbox" data-name="selectItem" value="9"><span>Străzi / Alei / Trotuare / Poduri</span></label></li>
+                                    <li class="" style="false"><label class=""><input type="checkbox" data-name="selectItem" value="10"><span>Taxe și impozite</span></label></li>
+                                    <li class="" style="false"><label class=""><input type="checkbox" data-name="selectItem" value="11"><span>Semnalizare rutieră</span></label></li>
+                                    <li class="" style="false"><label class=""><input type="checkbox" data-name="selectItem" value="12"><span>Tulburarea liniștii publice</span></label></li>
+                                    <li class="" style="false"><label class=""><input type="checkbox" data-name="selectItem" value="14"><span>Rețele de apă / canalizare (CAS)</span></label></li>
+                                    <li class="" style="false"><label class=""><input type="checkbox" data-name="selectItem" value="15"><span>Transport public (CTP)</span></label></li>
+                                    <li class="" style="false"><label class=""><input type="checkbox" data-name="selectItem" value="13"><span>Altele</span></label></li>
+                                    <li class="ms-no-results">Aucune notifications trouvée</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <select id="state" style="display: none;">
+                            <option value="O">Actif</option>
+                            <option value="C">Résolu</option>
+                            <option value="A" selected="selected">Tous</option>
+                        </select>
+                        <div class="ms-parent " style="width: auto;"><button type="button" class="ms-choice"><span class="">Etat: Tous</span><div></div></button><div class="ms-drop bottom"><ul style="max-height: 250px;"><li class="" style="false"><label class=""><input type="radio" data-name="selectItem" value="O"><span>Activ</span></label></li><li class="" style="false"><label class=""><input type="radio" data-name="selectItem" value="C"><span>Rezolvat</span></label></li><li class="selected" style="false"><label class=""><input type="radio" data-name="selectItem" checked="checked" value="A"><span>Toate</span></label></li><li class="ms-no-results">No matches found</li></ul></div></div>
+                        <div class="notEditable">
+                            <span class="notEditable-text">À partir de:</span>
+                            <input id="calendar_from" type="text" class="hasDatepicker">
+                            <!--<span class="closeCalendar"><img src="_css/image/x-close.png"></span>-->
+                        </div>
+                        <div class="notEditable">
+                            <span class="notEditable-text">Jusqu'à:</span>
+                            <input id="calendar_to" type="text" class="hasDatepicker">
+                            <!--<span class="closeCalendar"><img src="_css/image/x-close.png"></span>-->
+                        </div>
+                        <!--
+                        <div class="notEditable">
+                            <span class="notEditable-text">Nr. de inregistrare:</span>
+                            <input id="incidentNr" type="text"/>
+                            <span class="clearRegNo"><img src="_css/image/x-close.png"></span>
+                        </div>
+                        -->
+                        <button id="filterBtn" onclick="filter_Click();">Filtrer</button>
+                    </div>
+                </div>
+
+                <div id="DIV_pointer" style="display: block;">
+                    <header class="popupHeader">
+                        <span class="header_title">Ajoute une notification</span>
+                        <span class="modal_close" onclick="menuClose_Click();"><img src="../assets/images/x-close.png"></span>
+                    </header>
+
+                    <div class="popup-content">
+                        <p class="text-politia-locala">Pour une intervention opérationnelle de la police locale, veuillez appeler les numéros de téléphone:<a href="tel:0264955">0264/955 - Dispeceratul Poliției Locale</a><a href="tel:0264984">0264/984 - Telefonul Primarului</a></p>
+                        <input type="text" id="prenume" placeholder="Prénom*"><input type="text" id="nume" placeholder="Nom*"><input type="text" id="email" placeholder="Email*"><input type="text" id="telefon" placeholder="Téléphone">
+                        <select id="pinCategory">
+                            <option value="" disabled="" selected="">Sélectionnez une catégorie</option>
+                            <option value="1">Asistență socială</option>
+                            <option value="2">Depozitări deșeuri</option>
+                            <option value="3">Construcții / lucrări neautorizate; organizare şantier</option>
+                            <option value="4">Iluminat public</option>
+                            <option value="16">Parcări neregulamentare</option>
+                            <option value="5">Parcări / Parking-uri</option>
+                            <!--<option value="6">Persoane fără adăpost sau care apelează la mila publicului</option>-->
+                            <option value="7">Salubritate</option>
+                            <option value="8">Spații verzi / parcuri</option>
+                            <option value="9">Străzi / Alei / Trotuare / Poduri</option>
+                            <option value="10">Taxe și impozite</option>
+                            <option value="11">Semnalizare rutieră</option>
+                            <!--<option value="12">Tulburarea liniștii publice</option>-->
+                            <option value="14">Rețele de apă / canalizare (CAS)</option>
+                            <option value="15">Transport public (CTP)</option>
+                            <option value="13">Altele</option>
+                        </select>
+
+                        <textarea id="description" placeholder="Ajouter une description*"></textarea>
+
+                        <input type="file" id="inputImg" accept="image/*" style="display:none;" onchange="uploadImg();">
+                        <div id="poze-sesizari">
+                            <div class="poza-content" onclick="toggleImg(this);"></div>
+                            <div class="poza-content" onclick="toggleImg(this);"></div>
+                            <div class="poza-content" onclick="toggleImg(this);"></div>
+                        </div>
+
+                        <span class="validare-termeni">
+                            <input type="checkbox" id="agree" value="agree">Je suis d'accord avec <a href="termeni.html" target="_blank"> les termes et conditions</a>
+                        </span>
+
+                        <div class="marker-send-cancel-buttons">
+                            <button id="BTN_AddMarker" onclick="BTN_AddMarker_Click();">Indiquer l'endroit</button><button id="BTN_SendIncident" onclick="BTN_SendIncident_Click();">Envoyer</button><button id="BTN_CancelSendIncident" onclick="BTN_CancelSendIncident_Click();">Annuler</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div></div>
+</div>
+

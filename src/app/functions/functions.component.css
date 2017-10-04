@@ -1,0 +1,411 @@
+.thing-form {
+    margin: 20px 0;
+}
+
+#banner {
+    border-bottom: none;
+    margin-top: -20px;
+}
+
+#banner h1 {
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.hero-unit {
+    position: relative;
+    padding: 30px 15px;
+    color: #F5F5F5;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    background: #4393B9;
+}
+
+.navbar-text {
+    margin-left: 15px;
+}
+
+#dropdown {
+    width: 344px;
+    float: right;
+    position: relative;
+    /* display: none; */
+}
+
+.dropdownActions-wrapper {
+    display: block;
+    height: 70px;
+    margin: 0;
+    padding: 0;
+}
+
+.imgUser-wrapper, .imgFilters-wrapper, .imgPointer-wrapper, .imgChat-wrapper {
+    display: block;
+    float: left;
+    height: 70px;
+    margin: 0;
+    text-align: center;
+    width: 172px;
+    text-indent: -9999px;
+}
+
+.menu-link-active .link-active {
+    background-size: 134px 30px !important;
+}
+
+.popupHeader .modal_close img {
+    display: block;
+    line-height: 16px;
+}
+
+.popupHeader .modal_close {
+    color: #000;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 9px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.ms-choice > span.placeholder {
+    color: #fff;
+}
+
+
+.ms-choice > span {
+    display: block;
+    overflow: hidden;
+    padding-left: 25px;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.imgFilters-wrapper {
+    background: transparent url('../../assets/images/incident-list-icon.png') center center no-repeat;
+    background-size: 134px 30px;
+}
+
+.imgFilters-wrapper.link-active {
+    background-color: #87b14b;
+    background: #87b14b url('../../assets/images/incident-list-icon-white.png') center center no-repeat !important;
+    background-size: 134px 30px !important;
+}
+
+.imgPointer-wrapper {
+    background: transparent url('../../assets/images/incident-icon.png') center center no-repeat;
+    background-size: 134px 30px;
+}
+
+.imgPointer-wrapper.link-active {
+    background: #87b14b url('../../assets/images/incident-icon-white.png') center center no-repeat !important;
+    background-size: 134px 30px !important;
+}
+
+.imgUser-wrapper, .imgFilters-wrapper, .imgPointer-wrapper, .imgChat-wrapper {
+    display: block;
+    float: left;
+    height: 70px;
+    margin: 0;
+    text-align: center;
+    width: 172px;
+    text-indent: -9999px;
+}
+
+.popup-content {
+    padding: 20px;
+}
+
+.popupHeader {
+    background: #87b14b;
+    position: relative;
+    padding: 10px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+}
+
+.popupContainer {
+    background: rgba(255,255,255,0.9);
+    position: absolute;
+    width: 344px;
+    height: auto;
+    right: 0px;
+    top: 70px;
+}
+
+textarea, input, select {
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #555;
+}
+
+.ms-choice {
+    display: block;
+    width: 100%;
+    height: 32px;
+    padding: 6px 0;
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+    text-align: left;
+    white-space: nowrap;
+    color: #fff;
+    text-decoration: none;
+    background-color: #87b14b;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.ms-drop.bottom {
+    top: 100%;
+}
+
+.ms-drop {
+    overflow: hidden;
+    display: none;
+    margin-top: -1px;
+    padding: 0;
+    position: relative;
+    z-index: 1000;
+    color: #666;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+    border-top: none;
+}
+
+.notEditable {
+    background-color: #87b14b;
+    border: medium none;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 5px 0 5px 23px;
+    position: relative;
+    width: 100%;
+}
+
+input, textarea, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em;
+    font: 13.3333px Arial;
+}
+
+select[size], select[multiple], select[size][multiple] {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(169, 169, 169);
+    border-image: initial;
+}
+
+select:-internal-list-box {
+    -webkit-appearance: listbox;
+    align-items: flex-start;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    vertical-align: text-bottom;
+    user-select: none;
+    white-space: nowrap;
+    border-width: 1px;
+    border-style: inset;
+    border-color: grey;
+    border-image: initial;
+    border-radius: initial;
+}
+
+select, select[size="0"], select[size="1"] {
+    border-radius: 0px;
+    border-color: rgb(169, 169, 169);
+}
+
+select {
+    -webkit-appearance: menulist;
+    box-sizing: border-box;
+    align-items: center;
+    white-space: pre;
+    -webkit-rtl-ordering: logical;
+    color: black;
+    background-color: white;
+    cursor: default;
+    border-width: 1px;
+    border-style: solid;
+    border-color: initial;
+    border-image: initial;
+}
+
+select {
+    border-radius: 5px;
+}
+
+input, textarea, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em;
+    font: 13.3333px Arial;
+}
+
+.text-politia-locala {
+    font-size: 12px;
+    margin: 0 0 15px;
+}
+
+.text-politia-locala a, .text-politia-locala a:hover, .text-politia-locala a:active {
+    border-bottom: 1px dashed #cdcdcd;
+    color: #719b36;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 1;
+    margin: 10px 0 0;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+#prenume, #email {
+    margin-right: 6%;
+}
+
+#prenume, #nume, #email, #telefon {
+    border: 1px solid #cdcdcd;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 5px;
+    width: 43%;
+}
+
+#pinCategory {
+    background-color: #fff;
+    border: 1px solid #cdcdcd;
+    color: #555;
+    display: block;
+    margin-bottom: 15px;
+    padding: 5px;
+    position: static;
+    width: 100%;
+}
+
+#description {
+    display: block;
+    min-height: 70px;
+    margin-bottom: 15px;
+    padding: 10px;
+    position: relative;
+    resize: none;
+    width: 92%;
+    font-size: 12px;
+    border: 1px solid #cdcdcd;
+}
+
+.validare-termeni {
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.marker-send-cancel-buttons {
+    background-color: #79a140;
+    margin-top: 20px;
+}
+
+#BTN_SendIncident, #BTN_AddMarker, #BTN_CancelSendIncident  {
+    text-align: center;
+    background-color: transparent;
+    border-right: 1px solid rgba(0,0,0,0.1);
+    border-left: 1px solid rgba(255,255,255,0.2);
+    border-bottom: none;
+    border-top: none;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    height: 50px;
+    line-height: 14px;
+    margin: 0;
+    padding: 10px 0;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    vertical-align: top;
+    width: 33.2%;
+}
+
+#filterBtn {
+      text-align: center;
+      background-color: #87b14b;
+      border-right: 1px solid rgba(0,0,0,0.1);
+      border-left: 1px solid rgba(255,255,255,0.2);
+      border-bottom: none;
+      border-top: none;
+      color: #fff;
+      display: inline-block;
+      font-size: 14px;
+      height: 40px;
+      line-height: 14px;
+      margin: 0;
+      padding: 5px 0;
+      text-decoration: none;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      vertical-align: top;
+      width: 33.2%;
+  }
+
+#BTN_AddMarker {
+    border-left: none;
+}
+
+
+.logo-top {
+    position: absolute;
+    top: 40px;
+    left: 45px;
+    border: 0;
+    outline: none;
+    zoom:0.19
+}
+
+.notEditable[_ngcontent-c1] {
+    background-color: #87b14b;
+    border: medium none;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 5px 0 10px 23px;
+    position: relative;
+    width: auto;
+}
+
+#calendar_from , #calendar_to {
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.notEditable-text {
+    top: 3px;
+    position: relative;
+}
