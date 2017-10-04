@@ -1,0 +1,23 @@
+#mapContainer {
+    height: 100%;
+    position: absolute !important;
+    width: 100%;
+}
+
+#skin {
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    height: 70px;
+    background: #fff;
+    opacity: 0.9;
+}
+
+#map {
+    height: 100%;
+    position: initial;
+    width: 100%;
+}
