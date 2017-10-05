@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FunctionsComponent implements OnInit {
 
+    typesArray = [];
+
     constructor() { }
 
     ngOnInit() {
@@ -23,9 +25,9 @@ export class FunctionsComponent implements OnInit {
 
     }
 
-    addActiveClass(ele) {
+    addClass (ele, cls) {
 
-        ele.className += "link-active";
+        ele.className += " " + cls;
 
     }
 
@@ -48,15 +50,67 @@ export class FunctionsComponent implements OnInit {
 
         if(this.hasClass(ele, 'link-active')){
             this.removeClass(ele, "link-active");
-            this.addActiveClass(otherElement);
+            this.addClass(otherElement, "link-active");
             eleContent.style.display = "none";
             otherContent.style.display = "block";
         } else {
-            this.addActiveClass(ele);
+            this.addClass(ele, 'link-active');
             this.removeClass(otherElement, "link-active");
             eleContent.style.display = "block";
             otherContent.style.display = "none";
         }
+
+    }
+
+    toggleType(evt){
+        var ele = evt.currentTarget.children[1];
+        var other = evt.currentTarget.parentNode.children[1];
+        if(this.hasClass(ele, 'ms-choice-div-open')){
+            this.removeClass(ele, "ms-choice-div-open");
+            this.addClass(ele, "ms-choice-div");
+            this.removeClass(other, "ms-drop-open");
+            this.addClass(other, "ms-drop");
+        } else {
+            this.removeClass(ele, "ms-choice-div");
+            this.addClass(ele, "ms-choice-div-open");
+            this.removeClass(other, "ms-drop");
+            this.addClass(other, "ms-drop-open");
+        }
+    }
+
+    toggleState(evt){
+        var ele = evt.currentTarget.children[1];
+        var other = evt.currentTarget.parentNode.children[1];
+        if(this.hasClass(ele, 'ms-choice-div-open')){
+            this.removeClass(ele, "ms-choice-div-open");
+            this.addClass(ele, "ms-choice-div");
+            this.removeClass(other, "ms-drop-open");
+            this.addClass(other, "ms-drop");
+        } else {
+            this.removeClass(ele, "ms-choice-div");
+            this.addClass(ele, "ms-choice-div-open");
+            this.removeClass(other, "ms-drop");
+            this.addClass(other, "ms-drop-open");
+        }
+    }
+
+    selectType(evt) {
+        if(evt.srcElement.checked){
+            this.typesArray.push(evt.srcElement.value);
+        } else {
+            var index = this.typesArray.indexOf(evt.srcElement.value);
+            if (index > -1) {
+                this.typesArray.splice(index, 1);
+            }
+        }
+        console.log(this.typesArray);
+    }
+
+    filter_Click(){
+        let form = document.forms["frmFiltre"];
+        console.log(form);
+        //let cat = this.serializeObj(form);
+        //console.log(serialized);
 
     }
 
