@@ -81,6 +81,7 @@
     position: relative;
     text-overflow: ellipsis;
     white-space: nowrap;
+    top: 3px;
 }
 
 .imgFilters-wrapper {
@@ -161,6 +162,26 @@ textarea, input, select {
     margin-bottom: 10px;
 }
 
+.ms-choice-div {
+    background: url("../../assets/images/small-arrow-right.png") center center no-repeat;
+    background-size: 5px 9px;
+    height: 32px;
+    left: 0;
+    position: relative;
+    top: -22px;
+    width: 30px;
+}
+
+.ms-choice-div-open {
+    background: url("../../assets/images/small-arrow-down.png") center center no-repeat;
+    background-size: 9px 5px;
+    height: 32px;
+    left: 0;
+    position: relative;
+    top: -22px;
+    width: 30px;
+}
+
 .ms-drop.bottom {
     top: 100%;
 }
@@ -168,6 +189,20 @@ textarea, input, select {
 .ms-drop {
     overflow: hidden;
     display: none;
+    margin-top: -1px;
+    padding: 0;
+    position: relative;
+    z-index: 1000;
+    color: #666;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+    border-top: none;
+}
+
+.ms-drop-open {
+    overflow: hidden;
+    display: block;
     margin-top: -1px;
     padding: 0;
     position: relative;
@@ -350,6 +385,15 @@ input, textarea, select, button {
     width: 33.2%;
 }
 
+#BTN_AddMarker:hover, #BTN_SendIncident:hover, #BTN_CancelSendIncident:hover, #filterBtn:hover, .ms-choice:hover {
+    background-color: #0e943a;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
 #filterBtn {
       text-align: center;
       background-color: #87b14b;
@@ -403,9 +447,56 @@ input, textarea, select, button {
     float: right;
     margin-right: 10px;
     margin-bottom: 5px;
+    height: 18px;
+    text-align: right;
 }
 
 .notEditable-text {
     top: 3px;
     position: relative;
+}
+
+.typeUL, .stateUL {
+    list-style: none;
+    margin-left: -18px;
+}
+
+.typeLI {
+    margin-bottom: 5px;
+}
+
+.typeSpan {
+    margin-left: 10px;
+}
+
+
+.stateLI {
+    margin-bottom: 5px;
+}
+
+.stateSpan {
+    margin-left: 10px;
+}
+
+.ms-no-results {
+    display: none;
+}
+
+.photosDIV {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.photo-content {
+    background-image: url("../../assets/images/adauga-poza-bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #cdcdcd;
+    cursor: pointer;
+    display: inline-block;
+    height: 93px;
+    margin: 0 14px 0 0px;
+    overflow: hidden;
+    width: 27%;
 }
