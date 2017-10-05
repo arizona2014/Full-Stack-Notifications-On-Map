@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { MapComponent } from './map/map.component';
 import { FunctionsComponent } from './functions/functions.component';
+import { AgmCoreModule } from "@agm/core";
+
 
 @NgModule({
   declarations: [
@@ -12,7 +14,10 @@ import { FunctionsComponent } from './functions/functions.component';
     FunctionsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AgmCoreModule.forRoot({
+      libraries: ["places"]
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
