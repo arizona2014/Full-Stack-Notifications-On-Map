@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild, ElementRef, Renderer2} from '@angular/core';
 
 @Component({
   selector: 'app-functions',
@@ -7,15 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FunctionsComponent implements OnInit {
 
+    @ViewChild('state1') el1: ElementRef;
+    @ViewChild('state2') el2: ElementRef;
+    @ViewChild('state3') el3: ElementRef;
+    @ViewChild('state') stateElem: ElementRef;
+    @ViewChild('dateTo') dateTo: ElementRef;
+    @ViewChild('dateFrom') dateFrom: ElementRef;
+
     typesArray = [];
 
-    constructor() { }
+    constructor(private rd: Renderer2) { }
 
-    ngOnInit() {
-    }
+    ngOnInit() { }
 
     hasClass(ele,cls) {
+
         return ele.className.match(new RegExp('(\\s|^)'+cls+'(\\s|$)'));
+
     }
 
     removeClass(ele,cls) {
@@ -28,6 +36,55 @@ export class FunctionsComponent implements OnInit {
     addClass (ele, cls) {
 
         ele.className += " " + cls;
+
+    }
+
+    selectType(evt) {
+
+        if(evt.srcElement.checked){
+            this.typesArray.push(evt.srcElement.value);
+        } else {
+            var index = this.typesArray.indexOf(evt.srcElement.value);
+            if (index > -1) {
+                this.typesArray.splice(index, 1);
+            }
+        }
+
+    }
+
+    filter_Click(){
+
+        let form = document.forms["frmFiltre"];
+        console.log(this.typesArray);
+        console.log(this.stateElem.nativeElement.value);
+        console.log(this.dateFrom.nativeElement.value);
+        console.log(this.dateTo.nativeElement.value);
+        console.log(form);
+
+    }
+
+    toggleCheckState(evt){
+
+        switch(evt.srcElement.id){
+            case 'CheckState1':
+                this.stateElem.nativeElement.value  = "O";
+                this.el1.nativeElement.checked = true;
+                this.el2.nativeElement.checked = false;
+                this.el3.nativeElement.checked = false;
+                break;
+            case 'CheckState2':
+                this.stateElem.nativeElement.value = "C";
+                this.el1.nativeElement.checked = false;
+                this.el2.nativeElement.checked = true;
+                this.el3.nativeElement.checked = false;
+                break;
+            case 'CheckState3':
+                this.stateElem.nativeElement.value = "A";
+                this.el1.nativeElement.checked = false;
+                this.el2.nativeElement.checked = false;
+                this.el3.nativeElement.checked = true;
+                break;
+        }
 
     }
 
@@ -63,6 +120,7 @@ export class FunctionsComponent implements OnInit {
     }
 
     toggleType(evt){
+
         var ele = evt.currentTarget.children[1];
         var other = evt.currentTarget.parentNode.children[1];
         if(this.hasClass(ele, 'ms-choice-div-open')){
@@ -76,9 +134,11 @@ export class FunctionsComponent implements OnInit {
             this.removeClass(other, "ms-drop");
             this.addClass(other, "ms-drop-open");
         }
+
     }
 
     toggleState(evt){
+
         var ele = evt.currentTarget.children[1];
         var other = evt.currentTarget.parentNode.children[1];
         if(this.hasClass(ele, 'ms-choice-div-open')){
@@ -92,25 +152,6 @@ export class FunctionsComponent implements OnInit {
             this.removeClass(other, "ms-drop");
             this.addClass(other, "ms-drop-open");
         }
-    }
-
-    selectType(evt) {
-        if(evt.srcElement.checked){
-            this.typesArray.push(evt.srcElement.value);
-        } else {
-            var index = this.typesArray.indexOf(evt.srcElement.value);
-            if (index > -1) {
-                this.typesArray.splice(index, 1);
-            }
-        }
-        console.log(this.typesArray);
-    }
-
-    filter_Click(){
-        let form = document.forms["frmFiltre"];
-        console.log(form);
-        //let cat = this.serializeObj(form);
-        //console.log(serialized);
 
     }
 

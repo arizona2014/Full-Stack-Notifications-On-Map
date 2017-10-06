@@ -59,7 +59,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <select name="state" id="state" style="display: none;">
+                            <select name="state" #state id="state" style="display: none;">
                                 <option value="O">Actif</option>
                                 <option value="C">Résolu</option>
                                 <option value="A" selected="selected">Tous</option>
@@ -68,21 +68,21 @@
                                 <button type="button" (click)="toggleState($event)" class="ms-choice"><span class="">Etat: Tous</span><div class="ms-choice-div"></div></button>
                                 <div class="ms-drop bottom">
                                     <ul class="stateUL">
-                                        <li class="stateLI"><label ><input type="radio" data-name="selectItem" value="O"><span class="stateSpan">Actif</span></label></li>
-                                        <li class="stateLI"><label ><input type="radio" data-name="selectItem" value="C"><span class="stateSpan">Résolu</span></label></li>
-                                        <li class="stateLI selected"><label ><input type="radio" data-name="selectItem" checked="checked" value="A"><span class="stateSpan">Tous</span></label></li>
+                                        <li class="stateLI"><label ><input type="radio" (click)="toggleCheckState($event)" #state1 id="CheckState1" value="O"><span class="stateSpan">Actif</span></label></li>
+                                        <li class="stateLI"><label ><input type="radio" (click)="toggleCheckState($event)" #state2 id="CheckState2" value="C"><span class="stateSpan">Résolu</span></label></li>
+                                        <li class="stateLI selected"><label ><input type="radio" (click)="toggleCheckState($event)" #state3 id="CheckState3" checked="checked" value="A"><span class="stateSpan">Tous</span></label></li>
                                         <li class="stateLI ms-no-results">No matches found</li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="notEditable">
                                 <span class="notEditable-text">À partir de:</span>
-                                <input name="calendar_from" id="calendar_from" type="date" value="2017-10-04" >
+                                <input #dateFrom name="calendar_from" id="calendar_from" type="date" value="2017-10-04" >
                             </div>
                             <div class="notEditable">
                                 <span class="notEditable-text">Jusqu'à:</span>
 
-                                <input name="calendar_to" id="calendar_to" type="date"  value="2017-10-04" >
+                                <input #dateTo name="calendar_to" id="calendar_to" type="date"  value="2017-10-04" >
                             </div>
 
                             <button id="filterBtn" (click)="filter_Click();">Filtrer</button>
