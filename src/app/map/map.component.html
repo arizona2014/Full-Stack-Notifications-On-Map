@@ -1,2 +1,29 @@
+<div id="map" >
 
+    <agm-map [latitude]="latitude" [longitude]="longitude" [scrollwheel]="true" [zoom]="zoom"   [disableDefaultUI]="false"   (mapClick)="addMarker($event)">>
+
+        <agm-marker [iconUrl]="icon" [latitude]="latitude" [longitude]="longitude" [markerDraggable]="false" ></agm-marker>
+
+        <div *ngFor="let m of markers;let i = index" >
+
+            <agm-marker [iconUrl]="m.icon" [latitude]="m.lat" [longitude]="m.lng" (dragEnd)="markerDragEnd(m, $event)" [markerDraggable]="true"  (markerClick)="clickedMarker(m.label, i)">
+
+                <agm-info-window>
+                    <strong>InfoWindow content</strong>
+                </agm-info-window>
+
+            </agm-marker>
+
+        </div>
+
+        <agm-circle [latitude]="latitude + 0.3" [longitude]="longitude"
+                                [radius]="5000"
+                                [fillColor]="'red'"
+                                [circleDraggable]="true"
+                                [editable]="true">
+        </agm-circle>
+
+    </agm-map>
+
+</div>
 
