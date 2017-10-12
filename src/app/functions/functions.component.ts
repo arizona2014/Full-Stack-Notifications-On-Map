@@ -1,9 +1,10 @@
-import {Component, OnInit, ViewChild, ElementRef, Renderer2} from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, Renderer2, EventEmitter, Output, Input } from '@angular/core';
+import { DataService } from "../data.service";
 
 @Component({
-  selector: 'app-functions',
-  templateUrl: './functions.component.html',
-  styleUrls: ['./functions.component.css']
+    selector: 'app-functions',
+    templateUrl: './functions.component.html',
+    styleUrls: ['./functions.component.css']
 })
 export class FunctionsComponent implements OnInit {
 
@@ -13,10 +14,25 @@ export class FunctionsComponent implements OnInit {
     @ViewChild('state') stateElem: ElementRef;
     @ViewChild('dateTo') dateTo: ElementRef;
     @ViewChild('dateFrom') dateFrom: ElementRef;
+    @ViewChild('firstName') firstName: ElementRef;
+    @ViewChild('lastName') lastName: ElementRef;
+    @ViewChild('email') email: ElementRef;
+    @ViewChild('phone') phone: ElementRef;
+    @ViewChild('category') category: ElementRef;
+    @ViewChild('description') description: ElementRef;
 
+    @Input('addingMarkers') addingMarkers:any;
+    @Input('markerPlaced') markerPlaced:any;
+    @Input('newMarker') newMarker:any;
+    @Output()
+    changeFunctions:EventEmitter<any> = new EventEmitter<any>();
+
+
+    newMarkerInfos = {};
+    canAddMarker : boolean = false;
     typesArray = [];
 
-    constructor(private rd: Renderer2) { }
+    constructor(private rd: Renderer2, private dataService: DataService) { }
 
     ngOnInit() { }
 
@@ -42,30 +58,98 @@ export class FunctionsComponent implements OnInit {
     selectType(evt) {
 
         if(evt.srcElement.checked){
+
             this.typesArray.push(evt.srcElement.value);
+
         } else {
+
             var index = this.typesArray.indexOf(evt.srcElement.value);
             if (index > -1) {
                 this.typesArray.splice(index, 1);
             }
+
         }
 
     }
 
     filter_Click(){
 
-        let form = document.forms["frmFiltre"];
-        console.log(this.typesArray);
-        console.log(this.stateElem.nativeElement.value);
-        console.log(this.dateFrom.nativeElement.value);
-        console.log(this.dateTo.nativeElement.value);
-        console.log(form);
+        var filterString = { 'types' : this.typesArray, 'state' : this.stateElem.nativeElement.value, 'dateFrom': this.dateFrom.nativeElement.value, 'dateTo': this.dateTo.nativeElement.value }
+
+    }
+
+    BTN_AddMarker_Click(){
+
+        this.addingMarkers = true;
+        this.canAddMarker = true;
+        this.changeFunctions.emit({"adding" : this.addingMarkers, "marker": this.markerPlaced, 'newMarkerCoords': this.newMarker });
+
+    }
+
+    BTN_SendIncident_Click(){
+
+        var err = false;
+        var msg;
+        msg = document.getElementById('addMessage');
+        msg.innerText = ( msg.innerText !== "" ) ? "" : 'There seems to be an error ';
+
+        if( this.firstName.nativeElement.value === "" || this.lastName.nativeElement.value === "" || this.email.nativeElement.value === "" || this.description.nativeElement.value  === "" || this.category.nativeElement.value  === "" ){
+            err = true;
+        }
+
+        if(  this.email.nativeElement.validity.valid === false ){
+            err = true;
+        }
+
+        if(!err){
+
+            this.addingMarkers = false;
+            this.markerPlaced = false;
+            this.canAddMarker = false;
+
+            this.newMarker.firstName = this.firstName.nativeElement.value;
+            this.newMarker.lastName = this.lastName.nativeElement.value;
+            this.newMarker.email =  this.email.nativeElement.value;
+            this.newMarker.phone = this.phone.nativeElement.value;
+            this.newMarker.category = this.category.nativeElement.value;
+            this.newMarker.description = this.description.nativeElement.value;
+            this.newMarker.draggable = false;
+            this.newMarker.icon = 'https://maps.google.com/mapfiles/kml/shapes/info-i_maps.png';
+
+            this.dataService.saveMarker(this.newMarker).subscribe(res => {
+
+                this.firstName.nativeElement.value = '';
+                this.lastName.nativeElement.value = '';
+                this.email.nativeElement.value = '';
+                this.phone.nativeElement.value = '';
+                this.category.nativeElement.value = '';
+                this.description.nativeElement.value = '';
+
+                this.changeFunctions.emit({"adding" : this.addingMarkers, "marker": this.markerPlaced, 'newMarkerCoords': this.newMarker  });
+                msg.style.display = 'none';
+            });
+
+        } else {
+
+            msg.style.display = 'block';
+
+        }
+
+    }
+
+    BTN_CancelSendIncident_Click(){
+
+        this.addingMarkers = false;
+        this.markerPlaced = false;
+        this.canAddMarker = false;
+        this.changeFunctions.emit({"adding" : this.addingMarkers, "marker": this.markerPlaced, 'newMarkerCoords': this.newMarker  });
 
     }
 
     toggleCheckState(evt){
 
         switch(evt.srcElement.id){
+
             case 'CheckState1':
                 this.stateElem.nativeElement.value  = "O";
                 this.el1.nativeElement.checked = true;
@@ -84,6 +168,7 @@ export class FunctionsComponent implements OnInit {
                 this.el2.nativeElement.checked = false;
                 this.el3.nativeElement.checked = true;
                 break;
+
         }
 
     }
@@ -96,25 +181,33 @@ export class FunctionsComponent implements OnInit {
         var otherContent;
 
         if(ele.id === "BTN_pointer") {
+
             eleContent = document.getElementById("DIV_pointer");
             otherElement = document.getElementById("BTN_filters");
             otherContent = document.getElementById("DIV_filters");
+
         } else {
+
             eleContent = document.getElementById("DIV_filters");
             otherElement = document.getElementById("BTN_pointer");
             otherContent = document.getElementById("DIV_pointer");
+
         }
 
         if(this.hasClass(ele, 'link-active')){
+
             this.removeClass(ele, "link-active");
             this.addClass(otherElement, "link-active");
             eleContent.style.display = "none";
             otherContent.style.display = "block";
+
         } else {
+
             this.addClass(ele, 'link-active');
             this.removeClass(otherElement, "link-active");
             eleContent.style.display = "block";
             otherContent.style.display = "none";
+
         }
 
     }
@@ -124,15 +217,19 @@ export class FunctionsComponent implements OnInit {
         var ele = evt.currentTarget.children[1];
         var other = evt.currentTarget.parentNode.children[1];
         if(this.hasClass(ele, 'ms-choice-div-open')){
+
             this.removeClass(ele, "ms-choice-div-open");
             this.addClass(ele, "ms-choice-div");
             this.removeClass(other, "ms-drop-open");
             this.addClass(other, "ms-drop");
+
         } else {
+
             this.removeClass(ele, "ms-choice-div");
             this.addClass(ele, "ms-choice-div-open");
             this.removeClass(other, "ms-drop");
             this.addClass(other, "ms-drop-open");
+
         }
 
     }
@@ -142,15 +239,19 @@ export class FunctionsComponent implements OnInit {
         var ele = evt.currentTarget.children[1];
         var other = evt.currentTarget.parentNode.children[1];
         if(this.hasClass(ele, 'ms-choice-div-open')){
+
             this.removeClass(ele, "ms-choice-div-open");
             this.addClass(ele, "ms-choice-div");
             this.removeClass(other, "ms-drop-open");
             this.addClass(other, "ms-drop");
+
         } else {
+
             this.removeClass(ele, "ms-choice-div");
             this.addClass(ele, "ms-choice-div-open");
             this.removeClass(other, "ms-drop");
             this.addClass(other, "ms-drop-open");
+
         }
 
     }

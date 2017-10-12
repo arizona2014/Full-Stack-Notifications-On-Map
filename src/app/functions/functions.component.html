@@ -13,80 +13,80 @@
                     </header>
 
                     <div class="popup-content">
-                        <form name="frmFiltre">
-                            <select multiple="multiple" name="categories" id="categories" style="display: none;">
-                                <option value="1">Assistance sociale</option>
-                                <option value="2">Stockage des déchets</option>
-                                <option value="3">Construction / travaux non autorisés; organisation du site</option>
-                                <option value="4">Éclairage public</option>
-                                <option value="16">Stationnement non réglementaire</option>
-                                <option value="5">Parking</option>
-                                <option value="6">Sans-abris ou personnes qui font appel au public</option>
-                                <option value="7">Salubrité</option>
-                                <option value="8">Espaces verts / parcs</option>
-                                <option value="9">Rues / Passerelles / Trottoirs / Ponts</option>
-                                <option value="10">Taxes et impôts</option>
-                                <option value="11">Signalisation routière</option>
-                                <option value="12">Trouble de l'ordre public</option>
-                                <option value="14">Réseaux d'eau / d'assainissement (REA)</option>
-                                <option value="15">Transport public (CTP)</option>
-                                <option value="13">Autres</option>
-                            </select>
-                            <div class="ms-parent " style="width: auto">
-                                <button  (click)="toggleType($event)" type="button" class="ms-choice">
-                                    <span class="placeholder">Type: Tous</span>
-                                    <div class="ms-choice-div"></div>
-                                </button>
-                                <div class="ms-drop bottom">
-                                    <ul class="typeUL">
-                                        <li class="typeLI"><label ><input (click)="selectType($event)" type="checkbox" data-name="selectItem" value="1"><span class="typeSpan">Assistance sociale</span></label></li>
-                                        <li class="typeLI"><label ><input (click)="selectType($event)" type="checkbox" data-name="selectItem" value="2"><span class="typeSpan">Stockage des déchets</span></label></li>
-                                        <li class="typeLI"><label ><input (click)="selectType($event)" type="checkbox" data-name="selectItem" value="3"><span class="typeSpan">Construction / travaux non autorisés; organisation du site</span></label></li>
-                                        <li class="typeLI"><label ><input (click)="selectType($event)" type="checkbox" data-name="selectItem" value="4"><span class="typeSpan">Éclairage public</span></label></li>
-                                        <li class="typeLI"><label ><input (click)="selectType($event)" type="checkbox" data-name="selectItem" value="16"><span class="typeSpan">Stationnement non réglementaire</span></label></li>
-                                        <li class="typeLI"><label ><input (click)="selectType($event)" type="checkbox" data-name="selectItem" value="5"><span class="typeSpan">Parking</span></label></li>
-                                        <li class="typeLI"><label ><input (click)="selectType($event)" type="checkbox" data-name="selectItem" value="6"><span class="typeSpan">Sans-abris ou personnes qui font appel au public</span></label></li>
-                                        <li class="typeLI"><label ><input (click)="selectType($event)" type="checkbox" data-name="selectItem" value="7"><span class="typeSpan">Salubrité</span></label></li>
-                                        <li class="typeLI"><label ><input (click)="selectType($event)" type="checkbox" data-name="selectItem" value="8"><span class="typeSpan">Espaces verts / parcs</span></label></li>
-                                        <li class="typeLI"><label ><input (click)="selectType($event)" type="checkbox" data-name="selectItem" value="9"><span class="typeSpan">Rues / Passerelles / Trottoirs / Ponts</span></label></li>
-                                        <li class="typeLI"><label ><input (click)="selectType($event)" type="checkbox" data-name="selectItem" value="10"><span class="typeSpan">Taxes et impôts</span></label></li>
-                                        <li class="typeLI"><label ><input (click)="selectType($event)" type="checkbox" data-name="selectItem" value="11"><span class="typeSpan">Signalisation routière</span></label></li>
-                                        <li class="typeLI"><label ><input (click)="selectType($event)" type="checkbox" data-name="selectItem" value="12"><span class="typeSpan">Trouble de l'ordre public</span></label></li>
-                                        <li class="typeLI"><label ><input (click)="selectType($event)" type="checkbox" data-name="selectItem" value="14"><span class="typeSpan">Réseaux d'eau / d'assainissement (REA)</span></label></li>
-                                        <li class="typeLI"><label ><input (click)="selectType($event)" type="checkbox" data-name="selectItem" value="15"><span class="typeSpan">Transport public (CTP)</span></label></li>
-                                        <li class="typeLI"><label ><input (click)="selectType($event)" type="checkbox" data-name="selectItem" value="13"><span class="typeSpan">Autres</span></label></li>
-                                        <li class="typeLI ms-no-results">Aucune notifications trouvée</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <select name="state" #state id="state" style="display: none;">
-                                <option value="O">Actif</option>
-                                <option value="C">Résolu</option>
-                                <option value="A" selected="selected">Tous</option>
-                            </select>
-                            <div class="ms-parent " style="width: auto;">
-                                <button type="button" (click)="toggleState($event)" class="ms-choice"><span class="">Etat: Tous</span><div class="ms-choice-div"></div></button>
-                                <div class="ms-drop bottom">
-                                    <ul class="stateUL">
-                                        <li class="stateLI"><label ><input type="radio" (click)="toggleCheckState($event)" #state1 id="CheckState1" value="O"><span class="stateSpan">Actif</span></label></li>
-                                        <li class="stateLI"><label ><input type="radio" (click)="toggleCheckState($event)" #state2 id="CheckState2" value="C"><span class="stateSpan">Résolu</span></label></li>
-                                        <li class="stateLI selected"><label ><input type="radio" (click)="toggleCheckState($event)" #state3 id="CheckState3" checked="checked" value="A"><span class="stateSpan">Tous</span></label></li>
-                                        <li class="stateLI ms-no-results">No matches found</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="notEditable">
-                                <span class="notEditable-text">À partir de:</span>
-                                <input #dateFrom name="calendar_from" id="calendar_from" type="date" value="2017-10-04" >
-                            </div>
-                            <div class="notEditable">
-                                <span class="notEditable-text">Jusqu'à:</span>
 
-                                <input #dateTo name="calendar_to" id="calendar_to" type="date"  value="2017-10-04" >
+                        <select multiple="multiple" name="categories" id="categories" style="display: none;">
+                            <option value="1">Assistance sociale</option>
+                            <option value="2">Stockage des déchets</option>
+                            <option value="3">Construction / travaux non autorisés; organisation du site</option>
+                            <option value="4">Éclairage public</option>
+                            <option value="16">Stationnement non réglementaire</option>
+                            <option value="5">Parking</option>
+                            <option value="6">Sans-abris ou personnes qui font appel au public</option>
+                            <option value="7">Salubrité</option>
+                            <option value="8">Espaces verts / parcs</option>
+                            <option value="9">Rues / Passerelles / Trottoirs / Ponts</option>
+                            <option value="10">Taxes et impôts</option>
+                            <option value="11">Signalisation routière</option>
+                            <option value="12">Trouble de l'ordre public</option>
+                            <option value="14">Réseaux d'eau / d'assainissement (REA)</option>
+                            <option value="15">Transport public (CTP)</option>
+                            <option value="13">Autres</option>
+                        </select>
+                        <div class="ms-parent " style="width: auto">
+                            <button  (click)="toggleType($event)" type="button" class="ms-choice">
+                                <span class="placeholder">Type: Tous</span>
+                                <div class="ms-choice-div"></div>
+                            </button>
+                            <div class="ms-drop bottom">
+                                <ul class="typeUL">
+                                    <li class="typeLI"><label ><input (click)="selectType($event)" type="checkbox" data-name="selectItem" value="1"><span class="typeSpan">Assistance sociale</span></label></li>
+                                    <li class="typeLI"><label ><input (click)="selectType($event)" type="checkbox" data-name="selectItem" value="2"><span class="typeSpan">Stockage des déchets</span></label></li>
+                                    <li class="typeLI"><label ><input (click)="selectType($event)" type="checkbox" data-name="selectItem" value="3"><span class="typeSpan">Construction / travaux non autorisés; organisation du site</span></label></li>
+                                    <li class="typeLI"><label ><input (click)="selectType($event)" type="checkbox" data-name="selectItem" value="4"><span class="typeSpan">Éclairage public</span></label></li>
+                                    <li class="typeLI"><label ><input (click)="selectType($event)" type="checkbox" data-name="selectItem" value="16"><span class="typeSpan">Stationnement non réglementaire</span></label></li>
+                                    <li class="typeLI"><label ><input (click)="selectType($event)" type="checkbox" data-name="selectItem" value="5"><span class="typeSpan">Parking</span></label></li>
+                                    <li class="typeLI"><label ><input (click)="selectType($event)" type="checkbox" data-name="selectItem" value="6"><span class="typeSpan">Sans-abris ou personnes qui font appel au public</span></label></li>
+                                    <li class="typeLI"><label ><input (click)="selectType($event)" type="checkbox" data-name="selectItem" value="7"><span class="typeSpan">Salubrité</span></label></li>
+                                    <li class="typeLI"><label ><input (click)="selectType($event)" type="checkbox" data-name="selectItem" value="8"><span class="typeSpan">Espaces verts / parcs</span></label></li>
+                                    <li class="typeLI"><label ><input (click)="selectType($event)" type="checkbox" data-name="selectItem" value="9"><span class="typeSpan">Rues / Passerelles / Trottoirs / Ponts</span></label></li>
+                                    <li class="typeLI"><label ><input (click)="selectType($event)" type="checkbox" data-name="selectItem" value="10"><span class="typeSpan">Taxes et impôts</span></label></li>
+                                    <li class="typeLI"><label ><input (click)="selectType($event)" type="checkbox" data-name="selectItem" value="11"><span class="typeSpan">Signalisation routière</span></label></li>
+                                    <li class="typeLI"><label ><input (click)="selectType($event)" type="checkbox" data-name="selectItem" value="12"><span class="typeSpan">Trouble de l'ordre public</span></label></li>
+                                    <li class="typeLI"><label ><input (click)="selectType($event)" type="checkbox" data-name="selectItem" value="14"><span class="typeSpan">Réseaux d'eau / d'assainissement (REA)</span></label></li>
+                                    <li class="typeLI"><label ><input (click)="selectType($event)" type="checkbox" data-name="selectItem" value="15"><span class="typeSpan">Transport public (CTP)</span></label></li>
+                                    <li class="typeLI"><label ><input (click)="selectType($event)" type="checkbox" data-name="selectItem" value="13"><span class="typeSpan">Autres</span></label></li>
+                                    <li class="typeLI ms-no-results">Aucune notifications trouvée</li>
+                                </ul>
                             </div>
+                        </div>
+                        <select name="state" #state id="state" style="display: none;">
+                            <option value="O">Actif</option>
+                            <option value="C">Résolu</option>
+                            <option value="A" selected="selected">Tous</option>
+                        </select>
+                        <div class="ms-parent " style="width: auto;">
+                            <button type="button" (click)="toggleState($event)" class="ms-choice"><span class="">Etat: Tous</span><div class="ms-choice-div"></div></button>
+                            <div class="ms-drop bottom">
+                                <ul class="stateUL">
+                                    <li class="stateLI"><label ><input type="radio" (click)="toggleCheckState($event)" #state1 id="CheckState1" value="O"><span class="stateSpan">Actif</span></label></li>
+                                    <li class="stateLI"><label ><input type="radio" (click)="toggleCheckState($event)" #state2 id="CheckState2" value="C"><span class="stateSpan">Résolu</span></label></li>
+                                    <li class="stateLI selected"><label ><input type="radio" (click)="toggleCheckState($event)" #state3 id="CheckState3" checked="checked" value="A"><span class="stateSpan">Tous</span></label></li>
+                                    <li class="stateLI ms-no-results">No matches found</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="notEditable">
+                            <span class="notEditable-text">À partir de:</span>
+                            <input #dateFrom name="calendar_from" id="calendar_from" type="date" value="2017-10-04" >
+                        </div>
+                        <div class="notEditable">
+                            <span class="notEditable-text">Jusqu'à:</span>
 
-                            <button id="filterBtn" (click)="filter_Click();">Filtrer</button>
-                        </form>
+                            <input #dateTo name="calendar_to" id="calendar_to" type="date"  value="2017-10-04" >
+                        </div>
+
+                        <button id="filterBtn" (click)="filter_Click();">Filtrer</button>
+
                     </div>
                 </div>
 
@@ -98,8 +98,11 @@
 
                     <div class="popup-content">
                         <p class="text-politia-locala">Pour une intervention opérationnelle de la police locale, veuillez appeler les numéros de téléphone:<a href="tel:0264955">0264/955 - Dispeceratul Poliției Locale</a><a href="tel:0264984">0264/984 - Telefonul Primarului</a></p>
-                        <input type="text" id="prenume" placeholder="Prénom*"><input type="text" id="nume" placeholder="Nom*"><input type="text" id="email" placeholder="Email*"><input type="text" id="telefon" placeholder="Téléphone">
-                        <select id="pinCategory">
+                        <input type="text"  #firstName id="prenume" placeholder="Prénom*">
+                        <input #lastName type="text" id="nume" placeholder="Nom*">
+                        <input #email type="email" id="email" placeholder="Email*">
+                        <input #phone type="number" id="telefon" placeholder="Téléphone">
+                        <select #category id="pinCategory">
                             <option value="" disabled="" selected="">Sélectionnez une catégorie</option>
                             <option value="1">Assistance sociale</option>
                             <option value="2">Stockage des déchets</option>
@@ -119,7 +122,7 @@
                             <option value="13">Autres</option>
                         </select>
 
-                        <textarea id="description" placeholder="Ajouter une description*"></textarea>
+                        <textarea #description id="description" placeholder="Ajouter une description*"></textarea>
 
                         <input type="file" id="inputImg" accept="image/*" style="display:none;" onchange="uploadImg();">
                         <div class="photosDIV">
@@ -133,8 +136,13 @@
                         </span>
 
                         <div class="marker-send-cancel-buttons">
-                            <button id="BTN_AddMarker" onclick="BTN_AddMarker_Click();">Indiquer l'endroit</button><button id="BTN_SendIncident" onclick="BTN_SendIncident_Click();">Envoyer</button><button id="BTN_CancelSendIncident" onclick="BTN_CancelSendIncident_Click();">Annuler</button>
+                            <button [disabled]="canAddMarker" id="BTN_AddMarker" (click)="BTN_AddMarker_Click();">Indiquer l'endroit</button>
+                            <button [disabled]="!canAddMarker" id="BTN_SendIncident" (click)="BTN_SendIncident_Click();">Envoyer</button>
+                            <button [disabled]="!canAddMarker" id="BTN_CancelSendIncident" (click)="BTN_CancelSendIncident_Click();">Annuler</button>
                         </div>
+
+                        <div id="addMessage"></div>
+
                     </div>
                 </div>
             </section>
