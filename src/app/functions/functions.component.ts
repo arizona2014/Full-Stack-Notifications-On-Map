@@ -114,7 +114,57 @@ export class FunctionsComponent implements OnInit {
             this.newMarker.category = this.category.nativeElement.value;
             this.newMarker.description = this.description.nativeElement.value;
             this.newMarker.draggable = false;
-            this.newMarker.icon = 'https://maps.google.com/mapfiles/kml/shapes/info-i_maps.png';
+            switch(this.newMarker.category){
+                 case "1":
+                    this.newMarker.icon = '../../assets/images/dealGreen.png';
+                    break;
+                 case "2":
+                    this.newMarker.icon = '../../assets/images/wastesGreen.png';
+                    break;
+                 case "3":
+                    this.newMarker.icon = '../../assets/images/buildingGreen.png';
+                    break;
+                 case "4":
+                    this.newMarker.icon = '../../assets/images/bulbGreen.png';
+                    break;
+                 case "5":
+                    this.newMarker.icon = '../../assets/images/parkingGreen.png';
+                    break;
+                 case "6":
+                    this.newMarker.icon = '../../assets/images/homelessGreen.png';
+                    break;
+                 case "7":
+                    this.newMarker.icon = '../../assets/images/garbageGreen.png';
+                    break;
+                 case "8":
+                    this.newMarker.icon = '../../assets/images/treeGreen.png';
+                    break;
+                 case "9":
+                    this.newMarker.icon = '../../assets/images/roadGreen.png';
+                    break;
+                 case "10":
+                    this.newMarker.icon = '../../assets/images/saveGreen.png';
+                    break;
+                 case "11":
+                    this.newMarker.icon = '../../assets/images/trafficLightGreen.png';
+                    break;
+                 case "12":
+                    this.newMarker.icon = '../../assets/images/audioGreen.png';
+                    break;
+                 case "13":
+                    this.newMarker.icon = '../../assets/images/questionGreen.png';
+                    break;
+                 case "14":
+                    this.newMarker.icon = '../../assets/images/waterGreen.png';
+                    break;
+                 case "15":
+                    this.newMarker.icon = '../../assets/images/transportGreen.png';
+                    break;
+                 case "16":
+                    this.newMarker.icon = '../../assets/images/carGreen.png';
+                    break;
+            }
+
 
             this.dataService.saveMarker(this.newMarker).subscribe(res => {
 
