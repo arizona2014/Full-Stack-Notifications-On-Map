@@ -24,7 +24,6 @@ export class DataService {
         let options = new RequestOptions({ headers: headers });
         return this.http.post('http://localhost:3000/api/markers', JSON.stringify(newMarker), options)
             .map(result => {
-                console.log(result)
                 this.markers = result.json();
             });
 
