@@ -17,7 +17,6 @@ export class DataService {
 
     }
 
-
     saveMarker(newMarker: any){
 
         let headers = new Headers({ 'Content-Type': 'application/json'});
