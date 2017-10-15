@@ -26,11 +26,9 @@ export class MapComponent implements OnInit {
 
     constructor(private mapsAPILoader: MapsAPILoader, private ngZone: NgZone, private dataService: DataService ) {
 
-        console.log()
         this.dataService.getMarkers()
             .subscribe( (res) => {
                 this.markers = res.data;
-                console.log("ddd")
             });
 
     }
@@ -65,12 +63,13 @@ export class MapComponent implements OnInit {
     }
 
     clickedMarker(label: string, index: number){
-        //console.log(`clicked the marker ${label} with the index ${index}`);
+
+
+
     }
 
     addMarker($event: any) {
 
-        console.log(this.addingMarkers);
         if(this.addingMarkers){
 
             this.newMarker = {
@@ -89,7 +88,8 @@ export class MapComponent implements OnInit {
     }
 
     markerDragEnd(m: any, $event: MouseEvent) {
-        //console.log('dragEnd', m, $event);
+
+
     }
 
 }
