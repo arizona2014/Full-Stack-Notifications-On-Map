@@ -35,16 +35,11 @@ export class MapComponent implements OnInit {
 
     ngOnInit() {
 
-           //set google maps defaults
         this.zoom = 15;
         this.latitude = 46.005947239114626;
         this.longitude = 24.790892606250054;
         this.icon = "https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678111-map-marker-64.png";
-
-        //set current position
         this.setCurrentPosition();
-
-        //load Places Autocomplete
         this.mapsAPILoader.load().then(() => { });
 
     }
