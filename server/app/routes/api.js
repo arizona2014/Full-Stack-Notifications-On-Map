@@ -14,14 +14,12 @@ mongoose.connect('mongodb://localhost:27017/mysgel-api', err => {
     if (err) return console.error(err);
 });
 
-// Error handling
 const sendError = (err, res) => {
     response.status = 501;
     response.message = typeof err == 'object' ? err.message : err;
     res.status(501).json(response);
 };
 
-// Response handling
 let response = {
     status: 200,
     data: [],
@@ -41,7 +39,7 @@ router.get('/markers', (req, res) => {
     });
 });
 
-
+// Post a marker
 router.post('/markers', function(req, res) {
     var newMarker = new Marker(req.body);
 
