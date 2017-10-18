@@ -6,12 +6,14 @@ import { FunctionsComponent } from './functions/functions.component';
 import { AgmCoreModule } from "@agm/core";
 import { DataService } from "./data.service";
 import { HttpModule, Http } from '@angular/http';
+import { CategoryPipe } from './category.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     MapComponent,
-    FunctionsComponent
+    FunctionsComponent,
+    CategoryPipe
   ],
   imports: [
     BrowserModule,
