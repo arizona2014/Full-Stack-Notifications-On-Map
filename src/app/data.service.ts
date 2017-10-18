@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { Http, Response, Headers, RequestOptions } from "@angular/http";
 import 'rxjs/add/operator/map';
 
-
 @Injectable()
 export class DataService {
 
@@ -11,6 +10,13 @@ export class DataService {
     markers: any;
 
     getMarkers(){
+
+        return this.http.get('http://localhost:3000/api/markers')
+            .map(result => this.markers = result.json());
+
+    }
+
+    filterMarkers(criteria){
 
         return this.http.get('http://localhost:3000/api/markers')
             .map(result => this.markers = result.json());
