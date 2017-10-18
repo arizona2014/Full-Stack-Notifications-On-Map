@@ -75,6 +75,11 @@ export class FunctionsComponent implements OnInit {
     filter_Click(){
 
         var filterString = { 'types' : this.typesArray, 'state' : this.stateElem.nativeElement.value, 'dateFrom': this.dateFrom.nativeElement.value, 'dateTo': this.dateTo.nativeElement.value }
+        this.dataService.filterMarkers(filterString).subscribe(res => {
+
+            this.changeFunctions.emit({"adding" : this.addingMarkers, "marker": this.markerPlaced, 'newMarkerCoords': this.newMarker  });
+
+        });
 
     }
 
@@ -103,10 +108,10 @@ export class FunctionsComponent implements OnInit {
 
         if(!err){
 
+            let creationDate = Date.now();
             this.addingMarkers = false;
             this.markerPlaced = false;
             this.canAddMarker = false;
-
             this.newMarker.firstName = this.firstName.nativeElement.value;
             this.newMarker.lastName = this.lastName.nativeElement.value;
             this.newMarker.email =  this.email.nativeElement.value;
@@ -114,6 +119,9 @@ export class FunctionsComponent implements OnInit {
             this.newMarker.category = this.category.nativeElement.value;
             this.newMarker.description = this.description.nativeElement.value;
             this.newMarker.draggable = false;
+            this.newMarker.created = creationDate;
+            this.newMarker.status = 'Unsolved';
+
             switch(this.newMarker.category){
                  case "1":
                     this.newMarker.icon = '../../assets/images/dealGreen.png';
