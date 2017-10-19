@@ -10,3 +10,40 @@ agm-map {
     position: initial;
     width: 100%;
 }
+
+#tooltipArea {
+    display: block;
+}
+
+.popup-harta-categ, .popup-harta-status, .popup-harta-descr, .popup-harta-data {
+    display: block;
+    margin-bottom: 10px;
+    max-width: 240px;
+    padding: 1px 0 1px 25px;
+}
+
+.popup-harta-categ {
+    background: transparent url("../../assets/images/sesizare-categorie-icon.png") 0 0 no-repeat;
+}
+
+.popup-harta-status {
+    background: transparent url("../../assets/images/sesizare-status-icon.png") 0 0 no-repeat;
+}
+
+.status-c {
+    color: #71D142;
+}
+
+.popup-harta-descr {
+    background: transparent url("../../assets/images/sesizare-descriere-icon.png") 0 0 no-repeat;
+    max-height: 112px;
+    overflow: auto;
+}
+
+.popup-harta-data {
+    background: transparent url("../../assets/images/sesizare-calendar-icon.png") 0 0 no-repeat;
+}
+
+.popup-harta-categ span, .popup-harta-status span, .popup-harta-descr span, .popup-harta-data span {
+    font-weight: 500;
+}
