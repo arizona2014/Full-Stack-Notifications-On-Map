@@ -9,7 +9,12 @@
             <agm-marker [iconUrl]="m.icon" [latitude]="m.lat" [longitude]="m.lng" (dragEnd)="markerDragEnd(m, $event)" [markerDraggable]="true"  (markerClick)="clickedMarker(m.label, i)">
 
                 <agm-info-window>
-                    <strong>InfoWindow content</strong>
+                    <div id="tooltipArea">
+                        <div class="popup-harta-categ"><span>Categorie: </span>{{m.category | category}}</div>
+                        <div class="popup-harta-status"><span>Status sesizare: </span><span class="status-c">{{m.status}}</span></div>
+                        <div class="popup-harta-descr"><span>Descriere: </span>{{m.description}}</div>
+                        <div class="popup-harta-data"><span>Creat la: </span>{{m.created | date: 'MM-dd-yyyy'}}</div>
+                    </div>
                 </agm-info-window>
 
             </agm-marker>
