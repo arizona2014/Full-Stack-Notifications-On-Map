@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http, Response, Headers, RequestOptions } from "@angular/http";
+import { Http, Headers, RequestOptions } from "@angular/http";
 import 'rxjs/add/operator/map';
 
 @Injectable()
@@ -9,6 +9,7 @@ export class DataService {
 
     markers: any;
 
+    // Function that returns all markers from MongoDB
     getMarkers(){
 
         return this.http.get('http://localhost:3000/api/markers')
@@ -16,6 +17,7 @@ export class DataService {
 
     }
 
+    // Function that returns filtered markers from MongoDB
     filterMarkers(criteria){
 
         return this.http.get('http://localhost:3000/api/markers')
@@ -23,6 +25,7 @@ export class DataService {
 
     }
 
+    // Function that insert a marker into MongoDB
     saveMarker(newMarker: any){
 
         let headers = new Headers({ 'Content-Type': 'application/json'});
