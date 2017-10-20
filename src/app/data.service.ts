@@ -20,7 +20,7 @@ export class DataService {
     // Function that returns filtered markers from MongoDB
     filterMarkers(criteria){
 
-        return this.http.get('http://localhost:3000/api/markers')
+        return this.http.post('http://localhost:3000/api/find', {criteria : criteria})
             .map(result => this.markers = result.json());
 
     }
