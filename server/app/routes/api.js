@@ -39,6 +39,19 @@ router.get('/markers', (req, res) => {
     });
 });
 
+// Find markers
+router.post('/find', (req, res) => {
+    Marker.find().then(data => {
+        res.json({
+            data,
+            status: 200,
+            message: null
+        });
+    }).catch(err => {
+        sendError(err, res);
+    });
+});
+
 // Post a marker
 router.post('/markers', function(req, res) {
     var newMarker = new Marker(req.body);
