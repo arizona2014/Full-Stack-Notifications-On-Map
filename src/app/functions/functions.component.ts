@@ -77,6 +77,7 @@ export class FunctionsComponent implements OnInit {
         var filterString = { 'types' : this.typesArray, 'state' : this.stateElem.nativeElement.value, 'dateFrom': this.dateFrom.nativeElement.value, 'dateTo': this.dateTo.nativeElement.value }
         this.dataService.filterMarkers(filterString).subscribe(res => {
 
+            console.log(res);
             this.changeFunctions.emit({"adding" : this.addingMarkers, "marker": this.markerPlaced, 'newMarkerCoords': this.newMarker  });
 
         });
