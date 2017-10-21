@@ -41,7 +41,14 @@ router.get('/markers', (req, res) => {
 
 // Find markers
 router.post('/find', (req, res) => {
-    Marker.find().then(data => {
+
+    filtersCriteria = req.body.criteria;
+    filterFrom = filtersCriteria.dateFrom;
+    filterTo = filtersCriteria.dateTo;
+    filterState = filtersCriteria.state;
+    filterType = filtersCriteria.types[0];
+
+    Marker.find({ "category": filterType }).then(data => {
         res.json({
             data,
             status: 200,
