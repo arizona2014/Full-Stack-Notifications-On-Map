@@ -27,8 +27,6 @@ export class FunctionsComponent implements OnInit {
     @Output()
     changeFunctions:EventEmitter<any> = new EventEmitter<any>();
 
-
-    newMarkerInfos = {};
     canAddMarker : boolean = false;
     typesArray = [];
 
