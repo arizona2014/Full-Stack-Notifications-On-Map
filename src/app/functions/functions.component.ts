@@ -30,16 +30,19 @@ export class FunctionsComponent implements OnInit {
     canAddMarker : boolean = false;
     typesArray = [];
 
+    // Constructor for Functions class
     constructor(private rd: Renderer2, private dataService: DataService) { }
 
     ngOnInit() { }
 
+    // Helper function for finding if an element has certain css class
     hasClass(ele,cls) {
 
         return ele.className.match(new RegExp('(\\s|^)'+cls+'(\\s|$)'));
 
     }
 
+    // Helper function for removeing certain css class
     removeClass(ele,cls) {
 
         var reg = new RegExp('(\\s|^)'+cls+'(\\s|$)');
@@ -47,6 +50,7 @@ export class FunctionsComponent implements OnInit {
 
     }
 
+    // Helper function for adding certain css class
     addClass (ele, cls) {
 
         ele.className += " " + cls;
