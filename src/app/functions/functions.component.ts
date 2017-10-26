@@ -74,6 +74,7 @@ export class FunctionsComponent implements OnInit {
 
     }
 
+    // callback function for filter button
     filter_Click(){
 
         var filterString = { 'types' : this.typesArray, 'state' : this.stateElem.nativeElement.value, 'dateFrom': this.dateFrom.nativeElement.value, 'dateTo': this.dateTo.nativeElement.value }
@@ -85,6 +86,7 @@ export class FunctionsComponent implements OnInit {
 
     }
 
+    // callback function for adding a marker on the map button
     BTN_AddMarker_Click(){
 
         this.addingMarkers = true;
@@ -93,6 +95,7 @@ export class FunctionsComponent implements OnInit {
 
     }
 
+    // callback function for submitting a problem button
     BTN_SendIncident_Click(){
 
         var err = false;
@@ -197,6 +200,7 @@ export class FunctionsComponent implements OnInit {
 
     }
 
+    // callback function for canceling submit button
     BTN_CancelSendIncident_Click(){
 
         this.addingMarkers = false;
