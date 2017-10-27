@@ -238,7 +238,7 @@ export class FunctionsComponent implements OnInit {
 
     }
 
-
+    // callback function for the main tabs
     toggleMainTabs(evt) {
 
         var ele = evt.currentTarget;
@@ -278,6 +278,7 @@ export class FunctionsComponent implements OnInit {
 
     }
 
+    // callback function for the type input
     toggleType(evt){
 
         var ele = evt.currentTarget.children[1];
