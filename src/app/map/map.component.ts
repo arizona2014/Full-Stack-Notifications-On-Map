@@ -16,13 +16,13 @@ export class MapComponent implements OnInit {
     @Output()
     changeMap:EventEmitter<any> = new EventEmitter<any>();
 
-
     public latitude: number;
     public longitude: number;
     public zoom: number;
     public icon: string;
     public markers: Array<any>;
 
+    //Map component constructor
     constructor(private mapsAPILoader: MapsAPILoader, private ngZone: NgZone, private dataService: DataService ) {
 
         this.dataService.getMarkers()
