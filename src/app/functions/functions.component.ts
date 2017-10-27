@@ -210,6 +210,7 @@ export class FunctionsComponent implements OnInit {
 
     }
 
+    // callback function for the state input
     toggleCheckState(evt){
 
         switch(evt.srcElement.id){
@@ -236,6 +237,7 @@ export class FunctionsComponent implements OnInit {
         }
 
     }
+
 
     toggleMainTabs(evt) {
 
