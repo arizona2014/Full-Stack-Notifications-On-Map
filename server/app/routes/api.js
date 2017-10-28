@@ -26,7 +26,7 @@ let response = {
     message: null
 };
 
-// Get markers
+// Get markers route
 router.get('/markers', (req, res) => {
     Marker.find().then(data => {
         res.json({
@@ -39,7 +39,7 @@ router.get('/markers', (req, res) => {
     });
 });
 
-// Find markers
+// Find markers route
 router.post('/find', (req, res) => {
 
     filtersCriteria = req.body.criteria;
@@ -59,7 +59,7 @@ router.post('/find', (req, res) => {
     });
 });
 
-// Post a marker
+// Post a marker route
 router.post('/markers', function(req, res) {
     var newMarker = new Marker(req.body);
 
