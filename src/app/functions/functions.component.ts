@@ -301,6 +301,7 @@ export class FunctionsComponent implements OnInit {
 
     }
 
+    // callback function for the state toggle
     toggleState(evt){
 
         var ele = evt.currentTarget.children[1];
