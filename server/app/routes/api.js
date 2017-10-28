@@ -4,12 +4,6 @@ const Marker            = require('../models/marker');
 const mongoose          = require('mongoose');
 mongoose.Promise        = global.Promise;
 
-/*
- --- stdout
- stdin ---    --- stderr
- --- exit code
- */
-
 mongoose.connect('mongodb://localhost:27017/mysgel-api', err => {
     if (err) return console.error(err);
 });
