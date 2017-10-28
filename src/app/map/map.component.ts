@@ -32,6 +32,7 @@ export class MapComponent implements OnInit {
 
     }
 
+    // Map component initialization callback function
     ngOnInit() {
 
         this.zoom = 15;
@@ -43,6 +44,7 @@ export class MapComponent implements OnInit {
 
     }
 
+    // function to set current position on page load
     private setCurrentPosition() {
 
         if ("geolocation" in navigator) {
