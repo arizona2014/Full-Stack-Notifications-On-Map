@@ -42,7 +42,7 @@ router.post('/find', (req, res) => {
     filterState = filtersCriteria.state;
     filterType = filtersCriteria.types[0];
 
-    Marker.find({ "category": filterType }).then(data => {
+    Marker.find({ $and: [{ "category": { $gt: filterType} }, {"status": "Unsolved"}]}).then(data => {
         res.json({
             data,
             status: 200,
