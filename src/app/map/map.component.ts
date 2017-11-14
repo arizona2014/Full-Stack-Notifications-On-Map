@@ -36,6 +36,7 @@ export class MapComponent implements OnInit {
 
         const filteredMarkers: any = changes.filterMarkers.currentValue;
         this.markers = filteredMarkers;
+        // just for pushing on filtering
 
     }
 
