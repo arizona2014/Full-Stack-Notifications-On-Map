@@ -33,7 +33,7 @@ router.get('/markers', (req, res) => {
     });
 });
 
-// Find markers route
+// Find markers routes
 router.post('/find', (req, res) => {
 
     filtersCriteria = req.body.criteria;
