@@ -24,7 +24,6 @@ export class FunctionsComponent implements OnInit {
     @Input('addingMarkers') addingMarkers:any;
     @Input('markerPlaced') markerPlaced:any;
     @Input('newMarker') newMarker:any;
-    @Input('filterMarkers') filterMarkers:any;
     @Output()
     changeFunctions:EventEmitter<any> = new EventEmitter<any>();
 
@@ -81,8 +80,7 @@ export class FunctionsComponent implements OnInit {
         var filterString = { 'types' : this.typesArray, 'state' : this.stateElem.nativeElement.value, 'dateFrom': this.dateFrom.nativeElement.value, 'dateTo': this.dateTo.nativeElement.value }
         this.dataService.filterMarkers(filterString).subscribe(res => {
 
-            this.filterMarkers = res.data;
-            this.changeFunctions.emit({"adding" : this.addingMarkers, "marker": this.markerPlaced, 'newMarkerCoords': this.newMarker, 'filteredMarkers': this.filterMarkers  });
+            this.changeFunctions.emit({"adding" : this.addingMarkers, "marker": this.markerPlaced, 'newMarkerCoords': this.newMarker  });
 
         });
 
@@ -93,7 +91,7 @@ export class FunctionsComponent implements OnInit {
 
         this.addingMarkers = true;
         this.canAddMarker = true;
-        this.changeFunctions.emit({"adding" : this.addingMarkers, "marker": this.markerPlaced, 'newMarkerCoords': this.newMarker, 'filteredMarkers': this.filterMarkers  });
+        this.changeFunctions.emit({"adding" : this.addingMarkers, "marker": this.markerPlaced, 'newMarkerCoords': this.newMarker });
 
     }
 

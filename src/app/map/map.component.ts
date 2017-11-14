@@ -1,6 +1,7 @@
-import {Component, OnInit, NgZone, Input, Output, EventEmitter, SimpleChanges} from '@angular/core';
+import { Component, OnInit, NgZone, Input, Output, EventEmitter, } from '@angular/core';
 import { MapsAPILoader } from "@agm/core";
 import { DataService } from "../data.service";
+import { CategoryPipe } from '../category.pipe';
 
 @Component({
     selector: 'app-map',
@@ -12,7 +13,6 @@ export class MapComponent implements OnInit {
     @Input('addingMarkers') addingMarkers:any;
     @Input('markerPlaced') markerPlaced:any;
     @Input('newMarker') newMarker:any;
-    @Input('filterMarkers') filterMarkers:any;
     @Output()
     changeMap:EventEmitter<any> = new EventEmitter<any>();
 
@@ -29,14 +29,6 @@ export class MapComponent implements OnInit {
             .subscribe( (res) => {
                 this.markers = res.data;
             });
-
-    }
-
-    ngOnChanges(changes: SimpleChanges) {
-
-        const filteredMarkers: any = changes.filterMarkers.currentValue;
-        this.markers = filteredMarkers;
-        // just for pushing on filtering
 
     }
 
