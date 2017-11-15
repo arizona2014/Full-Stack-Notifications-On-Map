@@ -96,12 +96,12 @@
 }
 
 .imgPointer-wrapper {
-    background: transparent url('../../assets/images/incident-icon.png') center center no-repeat;
+    /*background: transparent url('../../assets/images/incident-icon.png') center center no-repeat;*/
     background-size: 134px 30px;
 }
 
 .imgPointer-wrapper.link-active {
-    background: #87b14b url('../../assets/images/incident-icon-white.png') center center no-repeat !important;
+    /*background: #87b14b url('../../assets/images/incident-icon-white.png') center center no-repeat !important;*/
     background-size: 134px 30px !important;
 }
 
