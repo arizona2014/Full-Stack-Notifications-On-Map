@@ -1,18 +1,19 @@
 <div class="container">
-    <a (click)="schimba($event);" href="#"><img src="../assets/images/sgel.png" class="logo-top"></a>
-    <div id="dropdown"><div class="dropdownActions-wrapper menu-link-active">
-        <div id="BTN_filters" (click)="toggleMainTabs($event);" class="imgFilters-wrapper " title="Filtres" >&nbsp;</div>
-        <div id="BTN_pointer" (click)="toggleMainTabs($event);" class="imgPointer-wrapper link-active" title="Semnaleaza Problema" >&nbsp;</div>
+    <!--<a (click)="schimba($event);" href="#"><img src="../assets/images/sgel.png" class="logo-top"></a>-->
+    <div id="dropdown">
+        <div class="dropdownActions-wrapper menu-link-active">
+<!--        <div id="BTN_filters" (click)="toggleMainTabs($event);" class="imgFilters-wrapper " title="Filtres" >&nbsp;</div>
+        <div id="BTN_pointer" (click)="toggleMainTabs($event);" class="imgPointer-wrapper link-active" title="Semnaleaza Problema" > </div>-->
 
         <div class="popupContainer">
             <section class="popupBody">
-                <div id="DIV_filters" style="display: none;">
+                <div id="DIV_filters" style="display: block;">
                     <header class="popupHeader">
                         <span class="header_title">Liste des notifications</span>
-                        <span class="modal_close" onclick="menuClose_Click();"><img src="../assets/images/x-close.png"></span>
+                        <span class="modal_close"><img  (click)="menuToggle($event);" id="filters_toggle"  src="../assets/images/x-close.png"></span>
                     </header>
 
-                    <div class="popup-content">
+                    <div class="popup-content" id="filters_content"  style="display: none;">
 
                         <select multiple="multiple" name="categories" id="categories" style="display: none;">
                             <option value="1">Assistance sociale</option>
@@ -93,10 +94,10 @@
                 <div id="DIV_pointer" style="display: block;">
                     <header class="popupHeader">
                         <span class="header_title">Ajoute une notification</span>
-                        <span class="modal_close" onclick="menuClose_Click();"><img src="../assets/images/x-close.png"></span>
+                        <span class="modal_close" ><img (click)="menuToggle($event);" id="pointer_toggle" src="../assets/images/x-close.png"></span>
                     </header>
 
-                    <div class="popup-content">
+                    <div class="popup-content" id="pointer_content"  style="display: none;">
                         <p class="text-politia-locala">Pour une intervention opérationnelle de la police locale, veuillez appeler les numéros de téléphone:<a href="tel:0264955">0264/955 - Dispeceratul Poliției Locale</a><a href="tel:0264984">0264/984 - Telefonul Primarului</a></p>
                         <input type="text"  #firstName id="prenume" placeholder="Prénom*">
                         <input #lastName type="text" id="nume" placeholder="Nom*">
