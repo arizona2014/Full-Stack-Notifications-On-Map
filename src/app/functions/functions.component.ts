@@ -200,6 +200,26 @@ export class FunctionsComponent implements OnInit {
 
     }
 
+    menuToggle(evt: any){
+        console.log(evt);
+        if(evt.srcElement.id === "pointer_toggle"){
+            var eleContent = document.getElementById("pointer_content");
+            if(eleContent.style.display === 'block'){
+                eleContent.style.display = "none";
+            } else {
+                eleContent.style.display = "block";
+            }
+        }
+        if(evt.srcElement.id === "filters_toggle"){
+            var eleContent = document.getElementById("filters_content");
+            if(eleContent.style.display === 'block'){
+                eleContent.style.display = "none";
+            } else {
+                eleContent.style.display = "block";
+            }
+        }
+    }
+
     // callback function for canceling submit button
     BTN_CancelSendIncident_Click(){
 
