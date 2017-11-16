@@ -218,6 +218,14 @@ export class FunctionsComponent implements OnInit {
                 eleContent.style.display = "block";
             }
         }
+        if(evt.srcElement.id === "traffic_toggle"){
+            var eleContent = document.getElementById("traffic_content");
+            if(eleContent.style.display === 'block'){
+                eleContent.style.display = "none";
+            } else {
+                eleContent.style.display = "block";
+            }
+        }
     }
 
     // callback function for canceling submit button
