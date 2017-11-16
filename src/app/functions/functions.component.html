@@ -7,9 +7,11 @@
 
         <div class="popupContainer">
             <section class="popupBody">
-                <div id="DIV_filters" style="display: block;">
+
+                <!--
+                <div id="DIV_filters" class="menuDivs">
                     <header class="popupHeader">
-                        <span class="header_title">Liste des notifications</span>
+                        <span class="header_title">Filtre</span>
                         <span class="modal_close"><img  (click)="menuToggle($event);" id="filters_toggle"  src="../assets/images/x-close.png"></span>
                     </header>
 
@@ -90,10 +92,12 @@
 
                     </div>
                 </div>
+                -->
 
-                <div id="DIV_pointer" style="display: block;">
+                <div id="DIV_pointer" class="menuDivs">
                     <header class="popupHeader">
-                        <span class="header_title">Ajoute une notification</span>
+                        <span class="header_title"><input type="checkbox" checked class="btnCheck" /></span>
+                        <span class="header_title">Sugestii</span>
                         <span class="modal_close" ><img (click)="menuToggle($event);" id="pointer_toggle" src="../assets/images/x-close.png"></span>
                     </header>
 
@@ -146,9 +150,105 @@
 
                     </div>
                 </div>
+
+                <div id="DIV_traffic" class="menuDivs">
+                    <header class="popupHeader">
+                        <span class="header_title"><input type="checkbox" checked class="btnCheck" /></span>
+                        <span class="header_title">Trafic</span>
+                        <span class="modal_close" ><img (click)="menuToggle($event);" id="traffic_toggle" src="../assets/images/x-close.png"></span>
+                    </header>
+
+                    <div class="popup-content" id="traffic_content"  style="display: none;">
+                        <p class="text-politia-locala">Pour une intervention opérationnelle de la police locale, veuillez appeler les numéros de téléphone:<a href="tel:0264955">0264/955 - Dispeceratul Poliției Locale</a><a href="tel:0264984">0264/984 - Telefonul Primarului</a></p>
+                        <input type="text"  #firstName id="strada" placeholder="Strada*">
+                        <input #lastName type="text" id="numarul" placeholder="Numarul*">
+                        <input #email type="text" id="orasul" placeholder="Orasul*">
+                        <input #phone type="number" id="codul" placeholder="Codul">
+                        <select #category id="tara">
+                            <option value="" disabled="" selected="">Sélectionnez une catégorie</option>
+                            <option value="1">Assistance sociale</option>
+                            <option value="2">Stockage des déchets</option>
+                            <option value="3">Construction / travaux non autorisés; organisation du site</option>
+                            <option value="4">Éclairage public</option>
+                            <option value="16">Stationnement non réglementaire</option>
+                            <option value="5">Parking</option>
+                            <option value="6">Sans-abris ou personnes qui font appel au public</option>
+                            <option value="7">Salubrité</option>
+                            <option value="8">Espaces verts / parcs</option>
+                            <option value="9">Rues / Passerelles / Trottoirs / Ponts</option>
+                            <option value="10">Taxes et impôts</option>
+                            <option value="11">Signalisation routière</option>
+                            <option value="12">Trouble de l'ordre public</option>
+                            <option value="14">Réseaux d'eau / d'assainissement (REA)</option>
+                            <option value="15">Transport public (CTP)</option>
+                            <option value="13">Autres</option>
+                        </select>
+
+                        <div class="marker-send-cancel-buttons">
+                            <button [disabled]="canAddMarker" id="BTN_Marker" (click)="BTN_AddMarker_Click();">Indiquer l'endroit</button>
+                            <button [disabled]="!canAddMarker" id="BTN_Incident" (click)="BTN_SendIncident_Click();">Envoyer</button>
+                            <button [disabled]="!canAddMarker" id="BTN_Send" (click)="BTN_CancelSendIncident_Click();">Annuler</button>
+                        </div>
+
+                        <div id="addMessageTraffic"></div>
+
+                    </div>
+                </div>
+
+                <div id="DIV_parcari" class="menuDivs">
+                    <header class="popupHeader">
+                        <span class="header_title"><input type="checkbox" checked class="btnCheck" /></span>
+                        <span class="header_title">Parcari</span>
+                        <span class="modal_close" ><img (click)="menuToggle($event);" id="parcari_toggle" src="../assets/images/x-close.png"></span>
+                    </header>
+
+                    <div class="popup-content" id="parcari_content"  style="display: none;">
+                        <p class="text-politia-locala">Pour une intervention opérationnelle de la police locale, veuillez appeler les numéros de téléphone:<a href="tel:0264955">0264/955 - Dispeceratul Poliției Locale</a><a href="tel:0264984">0264/984 - Telefonul Primarului</a></p>
+
+                    </div>
+                </div>
+
+                <div id="DIV_biciclete" class="menuDivs">
+                    <header class="popupHeader">
+                        <span class="header_title"><input type="checkbox" checked class="btnCheck" /></span>
+                        <span class="header_title">Biciclete</span>
+                        <span class="modal_close" ><img (click)="menuToggle($event);" id="biciclete_toggle" src="../assets/images/x-close.png"></span>
+                    </header>
+
+                    <div class="popup-content" id="biciclete_content"  style="display: none;">
+                        <p class="text-politia-locala">Pour une intervention opérationnelle de la police locale, veuillez appeler les numéros de téléphone:<a href="tel:0264955">0264/955 - Dispeceratul Poliției Locale</a><a href="tel:0264984">0264/984 - Telefonul Primarului</a></p>
+
+                    </div>
+                </div>
+
+                <div id="DIV_transport" class="menuDivs">
+                    <header class="popupHeader">
+                        <span class="header_title"><input type="checkbox" checked class="btnCheck" /></span>
+                        <span class="header_title">RATT</span>
+                        <span class="modal_close" ><img (click)="menuToggle($event);" id="transport_toggle" src="../assets/images/x-close.png"></span>
+                    </header>
+
+                    <div class="popup-content" id="transport_content"  style="display: none;">
+                        <p class="text-politia-locala">Pour une intervention opérationnelle de la police locale, veuillez appeler les numéros de téléphone:<a href="tel:0264955">0264/955 - Dispeceratul Poliției Locale</a><a href="tel:0264984">0264/984 - Telefonul Primarului</a></p>
+
+                    </div>
+                </div>
+
+                <div id="DIV_carshare" class="menuDivs">
+                    <header class="popupHeader">
+                        <span class="header_title"><input type="checkbox" checked class="btnCheck" /></span>
+                        <span class="header_title">Partaj masina</span>
+                        <span class="modal_close" ><img (click)="menuToggle($event);" id="carshare_toggle" src="../assets/images/x-close.png"></span>
+                    </header>
+
+                    <div class="popup-content" id="carshare_content"  style="display: none;">
+                        <p class="text-politia-locala">Pour une intervention opérationnelle de la police locale, veuillez appeler les numéros de téléphone:<a href="tel:0264955">0264/955 - Dispeceratul Poliției Locale</a><a href="tel:0264984">0264/984 - Telefonul Primarului</a></p>
+
+                    </div>
+                </div>
+
             </section>
             </div>
         </div>
     </div>
 </div>
-
