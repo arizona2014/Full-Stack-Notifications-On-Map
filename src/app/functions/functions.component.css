@@ -27,10 +27,15 @@
 }
 
 #dropdown {
-    width: 344px;
+    width: 100%;
     float: right;
     position: relative;
     /* display: none; */
+}
+
+.menuDivs {
+    display: block;
+    margin-bottom: 5px;
 }
 
 .dropdownActions-wrapper {
@@ -117,6 +122,12 @@
 
 .popup-content {
     padding: 20px;
+    display: none;
+    width: 400px;
+    position: absolute;
+    background: white;
+    right: -1px;
+    z-index: 1;
 }
 
 .popupHeader {
@@ -132,10 +143,15 @@
 .popupContainer {
     background: rgba(255,255,255,0.9);
     position: absolute;
-    width: 344px;
+    width: 100%;
     height: auto;
     right: 0px;
-    top: 70px;
+    top: 55px;
+}
+
+.header_title:hover {
+    font-weight: bolder;
+    cursor:pointer;
 }
 
 textarea, input, select {
@@ -316,11 +332,11 @@ input, textarea, select, button {
     text-decoration: none;
 }
 
-#prenume, #email {
+#prenume, #email, #strada, #orasul {
     margin-right: 6%;
 }
 
-#prenume, #nume, #email, #telefon {
+#prenume, #nume, #email, #telefon, #strada, #orasul, #codul, #numarul {
     border: 1px solid #cdcdcd;
     display: inline-block;
     margin-bottom: 15px;
@@ -328,7 +344,7 @@ input, textarea, select, button {
     width: 42%;
 }
 
-#pinCategory {
+#pinCategory, #tara {
     background-color: #fff;
     border: 1px solid #cdcdcd;
     color: #555;
@@ -519,4 +535,11 @@ input, textarea, select, button {
     color: red;
     font-size: 20px;
     display: none;
+}
+
+.btnCheck {
+    zoom:1.5;
+    position: absolute;
+    left: 10px;
+    top: 8px;
 }
