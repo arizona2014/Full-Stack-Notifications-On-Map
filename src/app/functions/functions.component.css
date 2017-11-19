@@ -140,13 +140,13 @@
     font-size: 18px;
 }
 
-.popupContainer {
-    background: rgba(255,255,255,0.9);
+#popupContainer {
     position: absolute;
     width: 100%;
     height: auto;
     right: 0px;
     top: 55px;
+    display:none;
 }
 
 .header_title:hover {
@@ -542,4 +542,15 @@ input, textarea, select, button {
     position: absolute;
     left: 10px;
     top: 8px;
+}
+
+.imgLayers-wrapper  {
+    zoom: 1.5;
+    right:2px;
+    top:2px;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    background-image: url("../../assets/images/layers.png");
+    cursor: pointer;
 }
