@@ -267,41 +267,15 @@ export class FunctionsComponent implements OnInit {
     }
 
     // callback function for the main tabs
-    toggleMainTabs(evt) {
+    toggleLayers(evt) {
 
         var ele = evt.currentTarget;
-        var eleContent;
-        var otherElement;
-        var otherContent;
-
-        if(ele.id === "BTN_pointer") {
-
-            eleContent = document.getElementById("DIV_pointer");
-            otherElement = document.getElementById("BTN_filters");
-            otherContent = document.getElementById("DIV_filters");
-
+        console.log(ele);
+        var otherElement = document.getElementById("popupContainer");
+        if(otherElement.style.display === 'block'){
+            otherElement.style.display = "none";
         } else {
-
-            eleContent = document.getElementById("DIV_filters");
-            otherElement = document.getElementById("BTN_pointer");
-            otherContent = document.getElementById("DIV_pointer");
-
-        }
-
-        if(this.hasClass(ele, 'link-active')){
-
-            this.removeClass(ele, "link-active");
-            this.addClass(otherElement, "link-active");
-            eleContent.style.display = "none";
-            otherContent.style.display = "block";
-
-        } else {
-
-            this.addClass(ele, 'link-active');
-            this.removeClass(otherElement, "link-active");
-            eleContent.style.display = "block";
-            otherContent.style.display = "none";
-
+            otherElement.style.display = 'block';
         }
 
     }
