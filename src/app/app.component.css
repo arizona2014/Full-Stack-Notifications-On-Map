@@ -6,12 +6,11 @@
 
 #skin {
     display: block;
-    right: 20px;
+    right: 40px;
     position: absolute;
-    top: 40px;
+    top: 75px;
     width: 10%;
     z-index: 999;
     height: 310px;
-    background: #fff;
     opacity: 1;
 }
