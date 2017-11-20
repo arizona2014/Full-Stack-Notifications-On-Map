@@ -1,7 +1,6 @@
 import { Component, OnInit, NgZone, Input, Output, EventEmitter, } from '@angular/core';
 import { MapsAPILoader } from "@agm/core";
 import { DataService } from "../data.service";
-import { CategoryPipe } from '../category.pipe';
 
 @Component({
     selector: 'app-map',
