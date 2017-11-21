@@ -1,3 +1,4 @@
+///<reference path="../../../node_modules/@agm/core/directives/data-layer.d.ts"/>
 import { Component, OnInit, NgZone, Input, Output, EventEmitter, } from '@angular/core';
 import { MapsAPILoader } from "@agm/core";
 import { DataService } from "../data.service";
@@ -20,26 +21,34 @@ export class MapComponent implements OnInit {
     public zoom: number;
     public icon: string;
     public markers: Array<any>;
+    public parkings: Object;
 
     //Map component constructor
-    constructor(private mapsAPILoader: MapsAPILoader, private ngZone: NgZone, private dataService: DataService ) {
+    constructor(private mapsAPILoader: MapsAPILoader, private ngZone: NgZone, private dataService: DataService ) { }
+
+    // Map component initialization callback function
+    ngOnInit() {
 
         this.dataService.getMarkers()
             .subscribe( (res) => {
                 this.markers = res.data;
             });
 
-    }
 
-    // Map component initialization callback function
-    ngOnInit() {
+        this.dataService.getParkings()
+            .subscribe( (res : any) => {
 
-        this.zoom = 15;
-        this.latitude = 46.005947239114626;
-        this.longitude = 24.790892606250054;
-        this.icon = "https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678111-map-marker-64.png";
-        this.setCurrentPosition();
-        this.mapsAPILoader.load().then(() => { });
+                this.parkings = res.geoJson;
+                this.zoom = res.zoomLevel;
+                this.latitude = res.center.lat;
+                this.longitude = res.center.lng;
+                this.icon = 'https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678111-map-marker-64.png';
+
+                if (!this.latitude || !this.longitude) {
+                    this.setCurrentPosition();
+                }
+                this.mapsAPILoader.load().then(() => { });
+            });
 
     }
 
