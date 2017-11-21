@@ -2,6 +2,8 @@
 
     <agm-map [latitude]="latitude" [longitude]="longitude" [scrollwheel]="true" [zoom]="zoom"  [disableDefaultUI]="false" (mapClick)="addMarker($event)">
 
+        <agm-data-layer [geoJson]="parkings" (layerClick)="clicked($event)" [style]="styleFunc" ></agm-data-layer>
+
         <agm-marker [iconUrl]="icon" [latitude]="latitude" [longitude]="longitude" [markerDraggable]="false" ></agm-marker>
 
         <div *ngFor="let m of markers;let i = index" >
