@@ -5,9 +5,11 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class DataService {
 
-    constructor(public http: Http) { }
+    // location of GeoJSON file in server
+    private _url = 'assets/data/parking.json';
+    private markers: any;
 
-    markers: any;
+    constructor(public http: Http) { }
 
     // Function that returns all markers from MongoDB
     getMarkers(){
@@ -35,6 +37,11 @@ export class DataService {
                 this.markers = result.json();
             });
 
+    }
+
+    // Function that recuperates parking JSON
+    getParkings() {
+        return this.http.get(this._url).map(result => result.json());
     }
 
 }
