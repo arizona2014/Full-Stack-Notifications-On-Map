@@ -87,9 +87,26 @@ export class MapComponent implements OnInit {
 
     }
 
+    styleFunc(feature) {
+        // get level - 0/1
+        var level = feature.getProperty('level');
+        var color = 'green';
+        // only show level one features
+        var visibility = level == 1 ? true : false;
+        return {
+            // icon for point geometry(in this case - doors)
+            icon: 'assets/images/treeGreen.png',
+            // set fill color for polygon features
+            fillColor: color,
+            // stroke color for polygons
+            strokeColor: color,
+            strokeWeight: 1,
+            // make layer 1 features visible
+            visible: visibility
+        };
+    }
+
     markerDragEnd(m: any, $event: MouseEvent) {
-
-
     }
 
 }
