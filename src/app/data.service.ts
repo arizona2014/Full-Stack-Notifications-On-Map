@@ -6,7 +6,7 @@ import 'rxjs/add/operator/map';
 export class DataService {
 
     // location of GeoJSON file in server
-    private _url = 'assets/data/parking.json';
+    private _url = 'assets/data/bikes.json';
     private markers: any;
 
     constructor(public http: Http) { }
