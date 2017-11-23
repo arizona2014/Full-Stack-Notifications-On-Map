@@ -1,0 +1,129 @@
+{
+  "center":{
+    "lat": 45.751129,
+    "lng": 21.223758
+  },
+  "zoomLevel":15,
+  "geoJson": {
+    "type":"FeatureCollection",
+    "generator":"JOSM",
+    "features":[
+      {
+        "type":"Feature",
+        "properties":{
+          "StationName": "Regele Ferdinand",
+          "Address": "Str. Regele Ferdinand",
+          "OcuppiedSpots": 9,
+          "EmptySpots": 11,
+          "MaximumNumberOfBikes": 20,
+          "LastSyncDate": "23.11.2017 14:48",
+          "IdStatus": 1,
+          "Status": "Functionala",
+          "StatusType": "Subpopulated",
+          "Latitude": 45.751129,
+          "Longitude": 21.223758,
+          "IsValid": true,
+          "CustomIsValid": false,
+          "Notifies": [],
+          "Id": 1
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.223758,
+            45.751129
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties":{
+          "StationName": "Torontanului Bucovinei",
+          "Address": "Torontanului cu Bucovinei",
+          "OcuppiedSpots": 11,
+          "EmptySpots": 9,
+          "MaximumNumberOfBikes": 20,
+          "LastSyncDate": "23.11.2017 14:48",
+          "IdStatus": 1,
+          "Status": "Functionala",
+          "StatusType": "Subpopulated",
+          "Latitude": 45.772036,
+          "Longitude": 21.216819,
+          "IsValid": true,
+          "CustomIsValid": false,
+          "Notifies": [],
+          "Id": 2
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.216819,
+            45.772036
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties":{
+          "StationName": "Liege",
+          "Address": "Liege",
+          "OcuppiedSpots": 5,
+          "EmptySpots": 15,
+          "MaximumNumberOfBikes": 20,
+          "LastSyncDate": "23.11.2017 14:48",
+          "IdStatus": 1,
+          "Status": "Functionala",
+          "StatusType": "Subpopulated",
+          "Latitude": 45.774997,
+          "Longitude": 21.221271,
+          "IsValid": true,
+          "CustomIsValid": false,
+          "Notifies": [],
+          "Id": 3
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.221271,
+            45.774997
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties":{
+          "StationName": "Ana Ipatescu",
+          "Address": "Ana Ipatescu",
+          "OcuppiedSpots": 10,
+          "EmptySpots": 9,
+          "MaximumNumberOfBikes": 19,
+          "LastSyncDate": "23.11.2017 14:48",
+          "IdStatus": 1,
+          "Status": "Functionala",
+          "StatusType": "Subpopulated",
+          "Latitude": 45.728312,
+          "Longitude": 21.204948,
+          "IsValid": true,
+          "CustomIsValid": false,
+          "Notifies": [],
+          "Id": 4
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.204948,
+            45.728312
+
+          ]
+        }
+      }
+    ]
+  }
+}
