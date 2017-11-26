@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MapComponent } from "./map/map.component";
+import { MapComponent } from './map/map.component';
 
 @Component({
     selector: 'app-root',
@@ -9,9 +9,9 @@ import { MapComponent } from "./map/map.component";
 export class AppComponent {
 
     title = 'app';
-    public _addingMarkers : boolean = false;
-    public _marketPlaced : boolean = false;
-    public _newMakerCoords : any = {};
+    public _addingMarkers = false;
+    public _marketPlaced = false;
+    public _newMakerCoords: any = {};
 
     changeFunctions(event) {
         this._addingMarkers  = event.adding;
