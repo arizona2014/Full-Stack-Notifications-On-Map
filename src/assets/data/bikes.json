@@ -123,6 +123,35 @@
 
           ]
         }
+      },
+      {
+        "type":"Feature",
+        "properties":{
+          "StationName": "Kogalniceanu",
+          "Address": "Kogalniceanu",
+          "OcuppiedSpots": 7,
+          "EmptySpots": 11,
+          "MaximumNumberOfBikes": 18,
+          "LastSyncDate": "11/27/2017 23:02",
+          "IdStatus": 1,
+          "Status": "Functional",
+          "StatusType": "Subpopulated",
+          "Latitude": 45.762782,
+          "Longitude": 21.247635,
+          "IsValid": true,
+          "CustomIsValid": false,
+          "Notifies": [],
+          "Id": 5
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.247635,
+            45.762782
+
+          ]
+        }
       }
     ]
   }
