@@ -37,7 +37,7 @@ export class DataService {
     }
 
     // Function that recuperates parking JSON
-    getParkings() {
+    getBikes() {
       return this.http.get(this._url).map(result => result.json());
     }
 
