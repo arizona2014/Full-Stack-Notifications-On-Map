@@ -21,16 +21,25 @@ export class MapComponent implements OnInit {
     public icon: string;
     public markers: Array<any>;
     public parkings: Object;
+    public bikes: Object;
 
     // Map component constructor
     constructor(private mapsAPILoader: MapsAPILoader, private ngZone: NgZone, private dataService: DataService ) { }
 
-    styleFunc(feature) {
+    zoomChange(evt){
+        this.zoom = evt;
+    }
+
+    bikesClicked(evt){
+        console.log(evt);
+    }
+
+    styleBikes(feature) {
       // get level - 0/1
-      const level = feature.getProperty('level');
+      const level = feature.getProperty('zoomLevel');
       const color = 'green';
       // only show level one features
-      const visibility = true;
+      const visibility =  true ;
       return {
         // icon for point geometry(in this case - doors)
         icon: 'assets/images/transportGreen.png',
@@ -53,10 +62,10 @@ export class MapComponent implements OnInit {
           });
 
 
-        this.dataService.getParkings()
+        this.dataService.getBikes()
           .subscribe( (res) => {
 
-            this.parkings = res.geoJson;
+            this.bikes = res.geoJson;
             this.zoom = res.zoomLevel;
             this.latitude = res.center.lat;
             this.longitude = res.center.lng;
@@ -86,6 +95,8 @@ export class MapComponent implements OnInit {
 
     clickedMarker(label: string, index: number) { }
 
+    markerDragEnd(m: any, $event: MouseEvent) { }
+
     addMarker($event: any) {
 
         if (this.addingMarkers) {
@@ -105,9 +116,5 @@ export class MapComponent implements OnInit {
 
     }
 
-    markerDragEnd(m: any, $event: MouseEvent) {
-
-
-    }
 
 }
