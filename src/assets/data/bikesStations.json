@@ -1,0 +1,1088 @@
+{
+  "center":{
+    "lat": 45.751129,
+    "lng": 21.223758
+  },
+  "zoomLevel":15,
+  "geoJson": {
+    "type":"FeatureCollection",
+    "generator":"JOSM",
+    "features":[
+      {
+        "type":"Feature",
+        "properties":{
+          "StationName": "Regele Ferdinand",
+          "Address": "Str. Regele Ferdinand",
+          "OcuppiedSpots": 9,
+          "EmptySpots": 11,
+          "MaximumNumberOfBikes": 20,
+          "LastSyncDate": "23.11.2017 14:48",
+          "IdStatus": 1,
+          "Status": "Functionala",
+          "StatusType": "Subpopulated",
+          "Latitude": 45.751129,
+          "Longitude": 21.223758,
+          "IsValid": true,
+          "CustomIsValid": false,
+          "Notifies": [],
+          "Id": 1
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.223758,
+            45.751129
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties":{
+          "StationName": "Torontanului Bucovinei",
+          "Address": "Torontanului cu Bucovinei",
+          "OcuppiedSpots": 11,
+          "EmptySpots": 9,
+          "MaximumNumberOfBikes": 20,
+          "LastSyncDate": "23.11.2017 14:48",
+          "IdStatus": 1,
+          "Status": "Functionala",
+          "StatusType": "Subpopulated",
+          "Latitude": 45.772036,
+          "Longitude": 21.216819,
+          "IsValid": true,
+          "CustomIsValid": false,
+          "Notifies": [],
+          "Id": 2
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.216819,
+            45.772036
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties":{
+          "StationName": "Liege",
+          "Address": "Liege",
+          "OcuppiedSpots": 5,
+          "EmptySpots": 15,
+          "MaximumNumberOfBikes": 20,
+          "LastSyncDate": "23.11.2017 14:48",
+          "IdStatus": 1,
+          "Status": "Functionala",
+          "StatusType": "Subpopulated",
+          "Latitude": 45.774997,
+          "Longitude": 21.221271,
+          "IsValid": true,
+          "CustomIsValid": false,
+          "Notifies": [],
+          "Id": 3
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.221271,
+            45.774997
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties":{
+          "StationName": "Ana Ipatescu",
+          "Address": "Ana Ipatescu",
+          "OcuppiedSpots": 10,
+          "EmptySpots": 9,
+          "MaximumNumberOfBikes": 19,
+          "LastSyncDate": "23.11.2017 14:48",
+          "IdStatus": 1,
+          "Status": "Functionala",
+          "StatusType": "Subpopulated",
+          "Latitude": 45.728312,
+          "Longitude": 21.204948,
+          "IsValid": true,
+          "CustomIsValid": false,
+          "Notifies": [],
+          "Id": 4
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.204948,
+            45.728312
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties":{
+          "StationName": "Kogalniceanu",
+          "Address": "Kogalniceanu",
+          "OcuppiedSpots": 7,
+          "EmptySpots": 11,
+          "MaximumNumberOfBikes": 18,
+          "LastSyncDate": "11/27/2017 23:02",
+          "IdStatus": 1,
+          "Status": "Functional",
+          "StatusType": "Subpopulated",
+          "Latitude": 45.762782,
+          "Longitude": 21.247635,
+          "IsValid": true,
+          "CustomIsValid": false,
+          "Notifies": [],
+          "Id": 5
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.247635,
+            45.762782
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties":{
+          "StationName":"Carol 1",
+          "Address":"Carol 1 cu Dragalina",
+          "OcuppiedSpots":12,
+          "EmptySpots":7,
+          "MaximumNumberOfBikes":19,
+          "LastSyncDate":"28.11.2017 18:02",
+          "IdStatus":1,
+          "Status":"Functionala",
+          "StatusType":"Subpopulated",
+          "Latitude":45.744746,
+          "Longitude":21.210786,
+          "IsValid":true,
+          "CustomIsValid":false,
+          "Notifies":[
+
+          ],
+          "Id":6
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.210786,
+            45.744746
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties":{
+          "StationName":"Profi",
+          "Address":"Profi - Str Sagului cu Str Rebreanu",
+          "OcuppiedSpots":9,
+          "EmptySpots":11,
+          "MaximumNumberOfBikes":20,
+          "LastSyncDate":"28.11.2017 18:02",
+          "IdStatus":1,
+          "Status":"Functionala",
+          "StatusType":"Subpopulated",
+          "Latitude":45.732855,
+          "Longitude":21.209021,
+          "IsValid":true,
+          "CustomIsValid":false,
+          "Notifies":[
+
+          ],
+          "Id":7
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.209021,
+            45.732855
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties":{
+          "StationName":"Take Ionescu",
+          "Address":"Take Ionescu",
+          "OcuppiedSpots":6,
+          "EmptySpots":11,
+          "MaximumNumberOfBikes":17,
+          "LastSyncDate":"28.11.2017 18:03",
+          "IdStatus":1,
+          "Status":"Functionala",
+          "StatusType":"Subpopulated",
+          "Latitude":45.757976,
+          "Longitude":21.234135,
+          "IsValid":true,
+          "CustomIsValid":false,
+          "Notifies":[
+
+          ],
+          "Id":8
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.234135,
+            45.757976
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties":{
+          "StationName":"Mihai Viteazu",
+          "Address":"Mihai Viteazu",
+          "OcuppiedSpots":12,
+          "EmptySpots":8,
+          "MaximumNumberOfBikes":20,
+          "LastSyncDate":"28.11.2017 18:02",
+          "IdStatus":1,
+          "Status":"Functionala",
+          "StatusType":"Subpopulated",
+          "Latitude":45.744931,
+          "Longitude":21.225744,
+          "IsValid":true,
+          "CustomIsValid":false,
+          "Notifies":[
+
+          ],
+          "Id":11
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.225744,
+            45.744931
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties":      {
+          "StationName":"Piata Marasti",
+          "Address":"Piata Marasti",
+          "OcuppiedSpots":9,
+          "EmptySpots":11,
+          "MaximumNumberOfBikes":20,
+          "LastSyncDate":"28.11.2017 18:02",
+          "IdStatus":1,
+          "Status":"Functionala",
+          "StatusType":"Subpopulated",
+          "Latitude":45.759353,
+          "Longitude":21.228378,
+          "IsValid":true,
+          "CustomIsValid":false,
+          "Notifies":[
+
+          ],
+          "Id":12
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.228378,
+            45.759353
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties": {
+          "StationName":"Ripensia",
+          "Address":"Sala Olimpia",
+          "OcuppiedSpots":15,
+          "EmptySpots":5,
+          "MaximumNumberOfBikes":20,
+          "LastSyncDate":"28.11.2017 17:58",
+          "IdStatus":1,
+          "Status":"Functionala",
+          "StatusType":"Offline",
+          "Latitude":45.745247,
+          "Longitude":21.241633,
+          "IsValid":true,
+          "CustomIsValid":false,
+          "Notifies":[
+
+          ],
+          "Id":13
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.241633,
+            45.745247
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties": {
+          "StationName":"Aries",
+          "Address":"Bulbuca cu Aries",
+          "OcuppiedSpots":11,
+          "EmptySpots":8,
+          "MaximumNumberOfBikes":19,
+          "LastSyncDate":"28.11.2017 18:02",
+          "IdStatus":1,
+          "Status":"Functionala",
+          "StatusType":"Subpopulated",
+          "Latitude":45.738001,
+          "Longitude":21.242053,
+          "IsValid":true,
+          "CustomIsValid":false,
+          "Notifies":[
+
+          ],
+          "Id":14
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.242053,
+            45.738001
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties": {
+          "StationName":"Kaufland",
+          "Address":"Kaufland(Gh Lazar)",
+          "OcuppiedSpots":6,
+          "EmptySpots":13,
+          "MaximumNumberOfBikes":19,
+          "LastSyncDate":"28.11.2017 18:02",
+          "IdStatus":1,
+          "Status":"Functionala",
+          "StatusType":"Subpopulated",
+          "Latitude":45.760539,
+          "Longitude":21.218665,
+          "IsValid":true,
+          "CustomIsValid":false,
+          "Notifies":[
+
+          ],
+          "Id":15
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.218665,
+            45.760539
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties": {
+          "StationName":"Armoniei",
+          "Address":"Armoniei",
+          "OcuppiedSpots":10,
+          "EmptySpots":29,
+          "MaximumNumberOfBikes":39,
+          "LastSyncDate":"28.11.2017 18:02",
+          "IdStatus":1,
+          "Status":"Functionala",
+          "StatusType":"Subpopulated",
+          "Latitude":45.779890,
+          "Longitude":21.234540,
+          "IsValid":true,
+          "CustomIsValid":false,
+          "Notifies":[
+
+          ],
+          "Id":16
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.234540,
+            45.779890
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties": {
+          "StationName":"Lct. Ovidiu Balea",
+          "Address":"Lct Ovidiu Balea",
+          "OcuppiedSpots":8,
+          "EmptySpots":32,
+          "MaximumNumberOfBikes":40,
+          "LastSyncDate":"28.11.2017 18:03",
+          "IdStatus":1,
+          "Status":"Functionala",
+          "StatusType":"Subpopulated",
+          "Latitude":45.766470,
+          "Longitude":21.193930,
+          "IsValid":true,
+          "CustomIsValid":false,
+          "Notifies":[
+
+          ],
+          "Id":17
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.193930,
+            45.766470
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties": {
+          "StationName":"Posta Centrala",
+          "Address":"Posta Centrala",
+          "OcuppiedSpots":8,
+          "EmptySpots":12,
+          "MaximumNumberOfBikes":20,
+          "LastSyncDate":"28.11.2017 18:02",
+          "IdStatus":1,
+          "Status":"Functionala",
+          "StatusType":"Subpopulated",
+          "Latitude":45.754707,
+          "Longitude":21.233771,
+          "IsValid":true,
+          "CustomIsValid":false,
+          "Notifies":[
+
+          ],
+          "Id":18
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.233771,
+            45.754707
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties": {
+          "StationName":"Piata Virgil Economu",
+          "Address":"Piata Virgil Economu",
+          "OcuppiedSpots":11,
+          "EmptySpots":29,
+          "MaximumNumberOfBikes":40,
+          "LastSyncDate":"28.11.2017 18:03",
+          "IdStatus":1,
+          "Status":"Functionala",
+          "StatusType":"Subpopulated",
+          "Latitude":45.766022,
+          "Longitude":21.261308,
+          "IsValid":true,
+          "CustomIsValid":false,
+          "Notifies":[
+
+          ],
+          "Id":19
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.261308,
+            45.766022
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties": {
+          "StationName":"Felix",
+          "Address":"Felix",
+          "OcuppiedSpots":4,
+          "EmptySpots":36,
+          "MaximumNumberOfBikes":40,
+          "LastSyncDate":"28.11.2017 18:02",
+          "IdStatus":1,
+          "Status":"Functionala",
+          "StatusType":"Subpopulated",
+          "Latitude":45.777772,
+          "Longitude":21.220477,
+          "IsValid":true,
+          "CustomIsValid":false,
+          "Notifies":[
+
+          ],
+          "Id":20
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.220477,
+            45.777772
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties": {
+          "StationName":"Piata Mocioni",
+          "Address":"Piata Mocioni",
+          "OcuppiedSpots":10,
+          "EmptySpots":10,
+          "MaximumNumberOfBikes":20,
+          "LastSyncDate":"28.11.2017 18:03",
+          "IdStatus":1,
+          "Status":"Functionala",
+          "StatusType":"Subpopulated",
+          "Latitude":45.746137,
+          "Longitude":21.215054,
+          "IsValid":true,
+          "CustomIsValid":false,
+          "Notifies":[
+
+          ],
+          "Id":21
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.215054,
+            45.746137
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties": {
+          "StationName":"Piata 700",
+          "Address":"Piata 700",
+          "OcuppiedSpots":15,
+          "EmptySpots":5,
+          "MaximumNumberOfBikes":20,
+          "LastSyncDate":"28.11.2017 17:58",
+          "IdStatus":1,
+          "Status":"Functionala",
+          "StatusType":"Offline",
+          "Latitude":45.756510,
+          "Longitude":21.223300,
+          "IsValid":true,
+          "CustomIsValid":false,
+          "Notifies":[
+
+          ],
+          "Id":22
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.223300,
+            45.756510
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties": {
+          "StationName":"Cons. Europei",
+          "Address":"Piata Consiliul Europei",
+          "OcuppiedSpots":8,
+          "EmptySpots":12,
+          "MaximumNumberOfBikes":20,
+          "LastSyncDate":"28.11.2017 18:02",
+          "IdStatus":1,
+          "Status":"Functionala",
+          "StatusType":"Subpopulated",
+          "Latitude":45.765616,
+          "Longitude":21.225930,
+          "IsValid":true,
+          "CustomIsValid":false,
+          "Notifies":[
+
+          ],
+          "Id":23
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.225930,
+            45.765616
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties": {
+          "StationName":"Divizia 9 Cavalerie",
+          "Address":"Divizia 9 Cavalerie",
+          "OcuppiedSpots":10,
+          "EmptySpots":10,
+          "MaximumNumberOfBikes":20,
+          "LastSyncDate":"28.11.2017 18:02",
+          "IdStatus":1,
+          "Status":"Functionala",
+          "StatusType":"Subpopulated",
+          "Latitude":45.769026,
+          "Longitude":21.229961,
+          "IsValid":true,
+          "CustomIsValid":false,
+          "Notifies":[
+
+          ],
+          "Id":24
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.229961,
+            45.769026
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties": {
+          "StationName":"Piata Leonardo DaVinci",
+          "Address":"Piata Leonardo DaVinci",
+          "OcuppiedSpots":3,
+          "EmptySpots":16,
+          "MaximumNumberOfBikes":19,
+          "LastSyncDate":"28.11.2017 18:02",
+          "IdStatus":1,
+          "Status":"Functionala",
+          "StatusType":"Subpopulated",
+          "Latitude":45.748328,
+          "Longitude":21.235671,
+          "IsValid":true,
+          "CustomIsValid":false,
+          "Notifies":[
+
+          ],
+          "Id":25
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.235671,
+            45.748328
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties": {
+          "StationName":"Domasneanu",
+          "Address":"Domasneanu",
+          "OcuppiedSpots":10,
+          "EmptySpots":28,
+          "MaximumNumberOfBikes":38,
+          "LastSyncDate":"28.11.2017 18:02",
+          "IdStatus":1,
+          "Status":"Functionala",
+          "StatusType":"Subpopulated",
+          "Latitude":45.732791,
+          "Longitude":21.258271,
+          "IsValid":true,
+          "CustomIsValid":false,
+          "Notifies":[
+
+          ],
+          "Id":26
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.258271,
+            45.732791
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties": {
+          "StationName":"Libertatii",
+          "Address":"Libertatii",
+          "OcuppiedSpots":2,
+          "EmptySpots":18,
+          "MaximumNumberOfBikes":20,
+          "LastSyncDate":"28.11.2017 18:02",
+          "IdStatus":1,
+          "Status":"Functionala",
+          "StatusType":"Subpopulated",
+          "Latitude":45.755960,
+          "Longitude":21.226760,
+          "IsValid":true,
+          "CustomIsValid":false,
+          "Notifies":[
+
+          ],
+          "Id":27
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.226760,
+            45.755960
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties": {
+          "StationName":"Statie Virtuala",
+          "Address":"asdasd",
+          "OcuppiedSpots":0,
+          "EmptySpots":0,
+          "MaximumNumberOfBikes":0,
+          "LastSyncDate":"01.01.2013 00:00",
+          "IdStatus":1,
+          "Status":"Functionala",
+          "StatusType":"Offline",
+          "Latitude":0.000000,
+          "Longitude":0.000000,
+          "IsValid":true,
+          "CustomIsValid":false,
+          "Notifies":[
+
+          ],
+          "Id":28
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            0.000000,
+            0.000000
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties": {
+          "StationName":"Statia7-Dragalina",
+          "Address":"Pod Dragalina",
+          "OcuppiedSpots":1,
+          "EmptySpots":17,
+          "MaximumNumberOfBikes":18,
+          "LastSyncDate":"28.11.2017 18:02",
+          "IdStatus":1,
+          "Status":"Functionala",
+          "StatusType":"Subpopulated",
+          "Latitude":45.747020,
+          "Longitude":21.209290,
+          "IsValid":true,
+          "CustomIsValid":false,
+          "Notifies":[
+
+          ],
+          "Id":29
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.209290,
+            45.747020
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties": {
+          "StationName":"Statia2 - Badea Cartan",
+          "Address":"statia 2 badea cartan",
+          "OcuppiedSpots":1,
+          "EmptySpots":19,
+          "MaximumNumberOfBikes":20,
+          "LastSyncDate":"28.11.2017 18:02",
+          "IdStatus":1,
+          "Status":"Functionala",
+          "StatusType":"Subpopulated",
+          "Latitude":45.760630,
+          "Longitude":21.249290,
+          "IsValid":true,
+          "CustomIsValid":false,
+          "Notifies":[
+
+          ],
+          "Id":30
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.249290,
+            45.760630
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties": {
+          "StationName":"3 - Mocioni Prefectura",
+          "Address":"statia 3 mocioni prefectura ",
+          "OcuppiedSpots":3,
+          "EmptySpots":16,
+          "MaximumNumberOfBikes":19,
+          "LastSyncDate":"28.11.2017 18:02",
+          "IdStatus":1,
+          "Status":"Functionala",
+          "StatusType":"Subpopulated",
+          "Latitude":45.756760,
+          "Longitude":21.240950,
+          "IsValid":true,
+          "CustomIsValid":false,
+          "Notifies":[
+
+          ],
+          "Id":31
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.240950,
+            45.756760
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties": {
+          "StationName":"4 - Pod DaVinci",
+          "Address":"Statia4 - Pod DaVinci",
+          "OcuppiedSpots":0,
+          "EmptySpots":39,
+          "MaximumNumberOfBikes":39,
+          "LastSyncDate":"28.11.2017 18:02",
+          "IdStatus":1,
+          "Status":"Functionala",
+          "StatusType":"Subpopulated",
+          "Latitude":45.750320,
+          "Longitude":21.235380,
+          "IsValid":true,
+          "CustomIsValid":false,
+          "Notifies":[
+
+          ],
+          "Id":32
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.235380,
+            45.750320
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties": {
+          "StationName":"8 - Golf",
+          "Address":"Statia 8 - Golf",
+          "OcuppiedSpots":0,
+          "EmptySpots":19,
+          "MaximumNumberOfBikes":19,
+          "LastSyncDate":"28.11.2017 18:03",
+          "IdStatus":1,
+          "Status":"Functionala",
+          "StatusType":"Subpopulated",
+          "Latitude":45.742410,
+          "Longitude":21.196290,
+          "IsValid":true,
+          "CustomIsValid":false,
+          "Notifies":[
+
+          ],
+          "Id":33
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.196290,
+            45.742410
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties": {
+          "StationName":"1 - Modern",
+          "Address":"Statia 1 - Modern",
+          "OcuppiedSpots":5,
+          "EmptySpots":35,
+          "MaximumNumberOfBikes":40,
+          "LastSyncDate":"28.11.2017 18:02",
+          "IdStatus":1,
+          "Status":"Functionala",
+          "StatusType":"Subpopulated",
+          "Latitude":45.760420,
+          "Longitude":21.258490,
+          "IsValid":true,
+          "CustomIsValid":false,
+          "Notifies":[
+
+          ],
+          "Id":34
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.258490,
+            45.760420
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties": {
+          "StationName":"Statia5 - Savoy",
+          "Address":"Statia5 - Savoy",
+          "OcuppiedSpots":22,
+          "EmptySpots":18,
+          "MaximumNumberOfBikes":40,
+          "LastSyncDate":"28.11.2017 18:02",
+          "IdStatus":1,
+          "Status":"Functionala",
+          "StatusType":"Subpopulated",
+          "Latitude":45.748580,
+          "Longitude":21.225070,
+          "IsValid":true,
+          "CustomIsValid":false,
+          "Notifies":[
+
+          ],
+          "Id":35
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.225070,
+            45.748580
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties": {
+          "StationName":"Statia9 - Pod Modos",
+          "Address":"Statia9 - Pod Modos",
+          "OcuppiedSpots":0,
+          "EmptySpots":39,
+          "MaximumNumberOfBikes":39,
+          "LastSyncDate":"16.11.2017 23:20",
+          "IdStatus":1,
+          "Status":"Functionala",
+          "StatusType":"Offline",
+          "Latitude":45.738900,
+          "Longitude":21.185420,
+          "IsValid":true,
+          "CustomIsValid":false,
+          "Notifies":[
+
+          ],
+          "Id":36
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.225070,
+            45.748580
+
+          ]
+        }
+      },
+      {
+        "type":"Feature",
+        "properties": {
+          "StationName":"6 - Pod Traian",
+          "Address":"Pod Traian",
+          "OcuppiedSpots":3,
+          "EmptySpots":33,
+          "MaximumNumberOfBikes":36,
+          "LastSyncDate":"28.11.2017 18:03",
+          "IdStatus":1,
+          "Status":"Functionala",
+          "StatusType":"Subpopulated",
+          "Latitude":45.749650,
+          "Longitude":21.220270,
+          "IsValid":true,
+          "CustomIsValid":false,
+          "Notifies":[
+
+          ],
+          "Id":37
+        },
+        "geometry":{
+          "type":"Point",
+          "coordinates":[
+
+            21.220270,
+            45.749650
+
+          ]
+        }
+      }
+    ]
+  }
+}
