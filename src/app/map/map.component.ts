@@ -34,6 +34,7 @@ export class MapComponent implements OnInit {
         console.log(evt);
     }
 
+    // TODO: relocate this function in a config like space
     styleBikes(feature) {
       // get level - 0/1
       const level = feature.getProperty('zoomLevel');
