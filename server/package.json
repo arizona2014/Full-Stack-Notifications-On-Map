@@ -15,5 +15,8 @@
     "express": "~4.0.0",
     "mongoose": "^4.6.8",
     "morgan": "~1.0.0"
+  },
+  "devDependencies": {
+    "payiota": "^1.0.5"
   }
 }
