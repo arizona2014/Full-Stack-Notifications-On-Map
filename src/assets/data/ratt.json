@@ -1,0 +1,256 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "short_name": "1",
+        "data":[
+          {
+            "id":"1536",
+            "name":"Gara Timi\u0219oara Nord - Sta\u021bia Meteo",
+            "geometry":"qrfvGi_m`CM}A`CuA??lKkGLSBMlBeA`@C`KiGTQgHuZw@qC]i@?CsEuEQ[kBgEmC{FaCeFyBeFgAmC??y@_CUc@ICS?GJw@pBeAhC}@rBu@nAQFQ?_@IKAMFMLe@n@MDgAE}@B??c@?{@JeCVqAAeBIa@ARkJX}IVgKFm@BOBeDDkCDuBj@eT??NyDFsDFiFEeGQgH??IyBYuDc@kBGU[aDAm@yAaNGgASoBQUGk@qBgH??WkAQ}AA_@FmB`Cge@??NuCC[GWIMJCaA}AkA}@WQe@i@}CkDcBwBcB_Cs@i@??aBsAiAq@}As@eDoBoBaA_@Ig@AiCFcAFQEOA{ENqB?_BDUBUHwAD??oZz@W@ORKTI`@Cd@TjQBbD",
+            "color":"DCE011",
+            "direction":"0",
+            "duration":"00:35",
+            "stops":[
+              {
+                "id":"13470",
+                "name":"Gara Timisoara Nord",
+                "latitude":"45.75039",
+                "longitude":"21.20716"
+              },
+              {
+                "id":"13472",
+                "name":"Regele Carol\/Piata Iosefin",
+                "latitude":"45.74526",
+                "longitude":"21.21113"
+              },
+              {
+                "id":"13474",
+                "name":"Piata Mocioni\/Sinaia",
+                "latitude":"45.7463",
+                "longitude":"21.21544"
+              },
+              {
+                "id":"13476",
+                "name":"Piata Sfanta Maria",
+                "latitude":"45.74841",
+                "longitude":"21.21864"
+              },
+              {
+                "id":"13478",
+                "name":"Catedrala Metropolitana",
+                "latitude":"45.7511901042",
+                "longitude":"21.2236905376"
+              },
+              {
+                "id":"15420",
+                "name":"Spitalul de Copii",
+                "latitude":"45.75509",
+                "longitude":"21.22122"
+              },
+              {
+                "id":"13480",
+                "name":"Piata Timisoara 700",
+                "latitude":"45.75625",
+                "longitude":"21.22291"
+              },
+              {
+                "id":"13482",
+                "name":"Piata Libertatii",
+                "latitude":"45.75597",
+                "longitude":"21.22666"
+              },
+              {
+                "id":"13484",
+                "name":"Hotel Continental",
+                "latitude":"45.75573",
+                "longitude":"21.23199"
+              },
+              {
+                "id":"13486",
+                "name":"Prefectura Judetului Timis",
+                "latitude":"45.75562",
+                "longitude":"21.23843"
+              },
+              {
+                "id":"13488",
+                "name":"Parcul Poporului",
+                "latitude":"45.7567",
+                "longitude":"21.24463"
+              },
+              {
+                "id":"13490",
+                "name":"Piata Traian",
+                "latitude":"45.75749",
+                "longitude":"21.24902"
+              },
+              {
+                "id":"13492",
+                "name":"Printul Turcesc",
+                "latitude":"45.756905991",
+                "longitude":"21.2550568263"
+              },
+              {
+                "id":"13493",
+                "name":"Parcul Uzinei",
+                "latitude":"45.75908",
+                "longitude":"21.25793"
+              },
+              {
+                "id":"13494",
+                "name":"Lalelelor",
+                "latitude":"45.76205",
+                "longitude":"21.26038"
+              },
+              {
+                "id":"13495",
+                "name":"Virgil Economu",
+                "latitude":"45.76506",
+                "longitude":"21.2606"
+              },
+              {
+                "id":"13496",
+                "name":"Spitalul Victor Babes",
+                "latitude":"45.76869",
+                "longitude":"21.26054"
+              },
+              {
+                "id":"13497",
+                "name":"Statia Meteo",
+                "latitude":"45.7719",
+                "longitude":"21.25901"
+              }
+            ]
+          },
+          {
+            "id":"1535",
+            "name":"Sta\u021bia Meteo - Gara Timi\u0219oara Nord",
+            "geometry":"axjvGspv`C??@zBEJzYxs@`FxLhBeBfJ}IZQ??b@QdEsAxEmBdEeBnBmApDcCd@?xGr@OlC??IzBA`AF~@TzA|BbIFj@PTRnBFfAxA`N@l@Z`D?ZBzB@PLr@L|ALnCJrFDxE?tCIdHUrHMlGKdFEhBPvBErCBVCb@CzAGj@_@jLE~@KjFCxA??M`E??CjBb@BxCHd@At@GrAQrAKZCvCHL@L@`@Of@a@`@_@rEoJHKJEL?JDLPx@zB??`DdH^|@nBfEL`@hEpJZh@`@l@zA|A|B~BNXNp@vAtF\\tA??jEpRwG|D??kAr@]XWf@kBdAQASFaOvIDd@LrA",
+            "color":"DCE011",
+            "direction":"1",
+            "duration":"00:35",
+            "stops":[
+              {
+                "id":"13497",
+                "name":"Statia Meteo",
+                "latitude":"45.7719",
+                "longitude":"21.25901"
+              },
+              {
+                "id":"13498",
+                "name":"UMT",
+                "latitude":"45.7717624614",
+                "longitude":"21.2559145967"
+              },
+              {
+                "id":"13499",
+                "name":"Politia Locala",
+                "latitude":"45.77013",
+                "longitude":"21.25189"
+              },
+              {
+                "id":"13500",
+                "name":"Gara Timisoara Est",
+                "latitude":"45.76664",
+                "longitude":"21.24502"
+              },
+              {
+                "id":"13501",
+                "name":"Piata Badea Cartan",
+                "latitude":"45.7627298217",
+                "longitude":"21.2475133816"
+              },
+              {
+                "id":"13491",
+                "name":"Piata Traian",
+                "latitude":"45.75761",
+                "longitude":"21.2486"
+              },
+              {
+                "id":"13489",
+                "name":"Parcul Poporului",
+                "latitude":"45.75677",
+                "longitude":"21.24459"
+              },
+              {
+                "id":"13487",
+                "name":"Prefectura Judetului Timis",
+                "latitude":"45.75572",
+                "longitude":"21.23843"
+              },
+              {
+                "id":"13485",
+                "name":"Hotel Continental\/Posta Mare",
+                "latitude":"45.7556708611",
+                "longitude":"21.2338872234"
+              },
+              {
+                "id":"13483",
+                "name":"Piata Libertatii",
+                "latitude":"45.75606",
+                "longitude":"21.22663"
+              },
+              {
+                "id":"13481",
+                "name":"Piata Timisoara 700",
+                "latitude":"45.75631",
+                "longitude":"21.22281"
+              },
+              {
+                "id":"15421",
+                "name":"Spitalul de Copii",
+                "latitude":"45.75512",
+                "longitude":"21.2211"
+              },
+              {
+                "id":"13479",
+                "name":"Catedrala Metropolitana",
+                "latitude":"45.7515951127",
+                "longitude":"21.2234657685"
+              },
+              {
+                "id":"13477",
+                "name":"Piata Sfanta Maria",
+                "latitude":"45.74879",
+                "longitude":"21.21921"
+              },
+              {
+                "id":"13475",
+                "name":"Piata Mocioni\/Sinaia",
+                "latitude":"45.7462",
+                "longitude":"21.21498"
+              },
+              {
+                "id":"13473",
+                "name":"Regele Carol\/Piata Iosefin",
+                "latitude":"45.74511",
+                "longitude":"21.2117"
+              },
+              {
+                "id":"13471",
+                "name":"Gara Timisoara Nord",
+                "latitude":"45.7504",
+                "longitude":"21.20686"
+              }
+            ]
+          }
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [21.236899, 45.743591, 0.0],
+          [21.238227, 45.741727, 0.0]
+        ]
+      }
+    }
+  ]
+}
