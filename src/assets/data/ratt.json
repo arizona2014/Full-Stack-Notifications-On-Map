@@ -293,6 +293,278 @@
     },
 
 
+    {
+      "status": "ok",
+      "data":[
+        {
+          "id":"1538",
+          "name":"D\u00e2mbovi\u021ba - Sta\u021bia Meteo",
+          "geometry":"crdvGkzj`C?AoEuQsCiMuD{NwAgGyAeGgAqFYqCOaB_@uBe@oBiAeF_E_QuCuL]q@c@k@?A}D}DQ[kBgEwA{C??oBaEuDoIqBcFIWe@kAEEICS@_BbE}@zB}@fBSZMLQ@a@GKCMBOHQXSVMHQ@_BE}@BSB??yBXs@DqAAyBIO@RyHTeJNaENwFFw@HcDBcDB_A??AAV{I??XgLLwCJkH@kDOaJ??MuD[gFOw@]qA[aDAm@yAaNGgASoBMQEWEWoAqEm@qBKo@Q}AA_@FmBBg@??PcDkBSwAO??kBQO@YNgG`EeEdBs@DO@aCn@oBv@q@Tc@De@D}@h@{@v@??iDfDmFdFC?kEqKeH_Q??}Oi`@",
+          "color":"DCE011",
+          "direction":"0",
+          "duration":"00:37",
+          "stops":[
+            {
+              "id":"13502",
+              "name":"Dambovita\/Dep. Tramvaie",
+              "latitude":"45.7403",
+              "longitude":"21.19664"
+            },
+            {
+              "id":"13504",
+              "name":"Crizantemelor",
+              "latitude":"45.7417191062",
+              "longitude":"21.2011707107"
+            },
+            {
+              "id":"13506",
+              "name":"Mangalia",
+              "latitude":"45.7426030093",
+              "longitude":"21.2036817948"
+            },
+            {
+              "id":"13508",
+              "name":"Iuliu Maniu",
+              "latitude":"45.74379",
+              "longitude":"21.20695"
+            },
+            {
+              "id":"13510",
+              "name":"Regele Carol\/Piata Iosefin",
+              "latitude":"45.74489",
+              "longitude":"21.21114"
+            },
+            {
+              "id":"13474",
+              "name":"Piata Mocioni\/Sinaia",
+              "latitude":"45.7463",
+              "longitude":"21.21544"
+            },
+            {
+              "id":"13476",
+              "name":"Piata Sfanta Maria",
+              "latitude":"45.74841",
+              "longitude":"21.21864"
+            },
+            {
+              "id":"13478",
+              "name":"Catedrala Metropolitana",
+              "latitude":"45.7511901042",
+              "longitude":"21.2236905376"
+            },
+            {
+              "id":"15420",
+              "name":"Spitalul de Copii",
+              "latitude":"45.75509",
+              "longitude":"21.22122"
+            },
+            {
+              "id":"13480",
+              "name":"Piata Timisoara 700",
+              "latitude":"45.75625",
+              "longitude":"21.22291"
+            },
+            {
+              "id":"13482",
+              "name":"Piata Libertatii",
+              "latitude":"45.75597",
+              "longitude":"21.22666"
+            },
+            {
+              "id":"13484",
+              "name":"Hotel Continental",
+              "latitude":"45.75573",
+              "longitude":"21.23199"
+            },
+            {
+              "id":"13486",
+              "name":"Prefectura Judetului Timis",
+              "latitude":"45.75562",
+              "longitude":"21.23843"
+            },
+            {
+              "id":"13488",
+              "name":"Parcul Poporului",
+              "latitude":"45.7567",
+              "longitude":"21.24463"
+            },
+            {
+              "id":"13490",
+              "name":"Piata Traian",
+              "latitude":"45.75749",
+              "longitude":"21.24902"
+            },
+            {
+              "id":"13511",
+              "name":"Piata Badea Cartan",
+              "latitude":"45.7623",
+              "longitude":"21.24772"
+            },
+            {
+              "id":"13512",
+              "name":"Gara Timisoara Est",
+              "latitude":"45.76673",
+              "longitude":"21.24535"
+            },
+            {
+              "id":"13513",
+              "name":"Politia Locala",
+              "latitude":"45.77009",
+              "longitude":"21.25204"
+            },
+            {
+              "id":"13514",
+              "name":"UMT",
+              "latitude":"45.77161",
+              "longitude":"21.25497"
+            },
+            {
+              "id":"13515",
+              "name":"Statia Meteo",
+              "latitude":"45.77186",
+              "longitude":"21.25956"
+            }
+          ]
+        },
+        {
+          "id":"1537",
+          "name":"Sta\u021bia Meteo - D\u00e2mbovi\u021ba",
+          "geometry":"kwjvGujv`C?AYs@DKGuGIiF??KaJBe@Ha@JUNSVAjUq@??zFOTBt@?R@d@FdB@vACdD]PI`@CbCGf@Cf@@^Hl@X|EpC??fBx@hAp@tC|BbB~BbBvB|CjDd@h@^n@`@l@vArALXDV@^cBz[m@pLGlB@^P|Ab@lB??dBdGFj@PTRnBFfAxA`N@l@Z`D?ZBzB@PLr@L|ALnCDpB??F`EBdFInJ[dMYjM@NRlACtBGtEI\\GxA[~J@AGhASlKKxDn@?|@F|@?p@Bt@G~BYdAEtBF`@D`@?d@Q\\Wd@c@A?vEwJHKJEL?JDLPbAlCnBdEf@lAlAnC??`AtBL`@hEpJZh@`@l@xE|ENXNp@vAtFhC|K??jBnIZhAdBfIDLDJBJLFt@hH~@zD?A??AAlBtHzBzI`BrGtAfGjA`HBZCAlEfR",
+          "color":"DCE011",
+          "direction":"1",
+          "duration":"00:37",
+          "stops":[
+            {
+              "id":"13515",
+              "name":"Statia Meteo",
+              "latitude":"45.77186",
+              "longitude":"21.25956"
+            },
+            {
+              "id":"13516",
+              "name":"Spitalul Victor Babes",
+              "latitude":"45.76885",
+              "longitude":"21.26042"
+            },
+            {
+              "id":"13517",
+              "name":"Virgil Economu Economu",
+              "latitude":"45.7656854798",
+              "longitude":"21.2605499903"
+            },
+            {
+              "id":"13518",
+              "name":"Lalelelor",
+              "latitude":"45.76224",
+              "longitude":"21.26042"
+            },
+            {
+              "id":"13519",
+              "name":"Parcul Uzinei",
+              "latitude":"45.75936",
+              "longitude":"21.25821"
+            },
+            {
+              "id":"13520",
+              "name":"Printul Turcesc",
+              "latitude":"45.7571",
+              "longitude":"21.2557"
+            },
+            {
+              "id":"13491",
+              "name":"Piata Traian",
+              "latitude":"45.75761",
+              "longitude":"21.2486"
+            },
+            {
+              "id":"13489",
+              "name":"Parcul Poporului",
+              "latitude":"45.75677",
+              "longitude":"21.24459"
+            },
+            {
+              "id":"13487",
+              "name":"Prefectura Judetului Timis",
+              "latitude":"45.75572",
+              "longitude":"21.23843"
+            },
+            {
+              "id":"13485",
+              "name":"Hotel Continental\/Posta Mare",
+              "latitude":"45.7556708611",
+              "longitude":"21.2338872234"
+            },
+            {
+              "id":"13482",
+              "name":"Piata Libertatii",
+              "latitude":"45.75597",
+              "longitude":"21.22666"
+            },
+            {
+              "id":"13481",
+              "name":"Piata Timisoara 700",
+              "latitude":"45.75631",
+              "longitude":"21.22281"
+            },
+            {
+              "id":"15421",
+              "name":"Spitalul de Copii",
+              "latitude":"45.75512",
+              "longitude":"21.2211"
+            },
+            {
+              "id":"13479",
+              "name":"Catedrala Metropolitana",
+              "latitude":"45.7515951127",
+              "longitude":"21.2234657685"
+            },
+            {
+              "id":"13477",
+              "name":"Piata Sfanta Maria",
+              "latitude":"45.74879",
+              "longitude":"21.21921"
+            },
+            {
+              "id":"13475",
+              "name":"Piata Mocioni\/Sinaia",
+              "latitude":"45.7462",
+              "longitude":"21.21498"
+            },
+            {
+              "id":"13473",
+              "name":"Regele Carol\/Piata Iosefin",
+              "latitude":"45.74511",
+              "longitude":"21.2117"
+            },
+            {
+              "id":"13509",
+              "name":"Iuliu Maniu",
+              "latitude":"45.74359",
+              "longitude":"21.20652"
+            },
+            {
+              "id":"13507",
+              "name":"Mangalia",
+              "latitude":"45.74279",
+              "longitude":"21.20411"
+            },
+            {
+              "id":"13505",
+              "name":"Crizantemelor",
+              "latitude":"45.7418842074",
+              "longitude":"21.2016004006"
+            },
+            {
+              "id":"13503",
+              "name":"Dambovita\/Dep. Tramvaie",
+              "latitude":"45.74018",
+              "longitude":"21.19615"
+            }
+          ]
+        }
+      ]
+    }
+
 
   ]
 }
