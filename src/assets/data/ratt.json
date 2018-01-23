@@ -455,11 +455,11 @@
     {
       "type": "Feature",
       "properties": {
-        "id":"1538",
-        "name":"D\u00e2mbovi\u021ba - Sta\u021bia Meteo",
-        "geometry":"crdvGkzj`C?AoEuQsCiMuD{NwAgGyAeGgAqFYqCOaB_@uBe@oBiAeF_E_QuCuL]q@c@k@?A}D}DQ[kBgEwA{C??oBaEuDoIqBcFIWe@kAEEICS@_BbE}@zB}@fBSZMLQ@a@GKCMBOHQXSVMHQ@_BE}@BSB??yBXs@DqAAyBIO@RyHTeJNaENwFFw@HcDBcDB_A??AAV{I??XgLLwCJkH@kDOaJ??MuD[gFOw@]qA[aDAm@yAaNGgASoBMQEWEWoAqEm@qBKo@Q}AA_@FmBBg@??PcDkBSwAO??kBQO@YNgG`EeEdBs@DO@aCn@oBv@q@Tc@De@D}@h@{@v@??iDfDmFdFC?kEqKeH_Q??}Oi`@",
+        "id":"1537",
+        "name":"Sta\u021bia Meteo - D\u00e2mbovi\u021ba",
+        "geometry":"kwjvGujv`C?AYs@DKGuGIiF??KaJBe@Ha@JUNSVAjUq@??zFOTBt@?R@d@FdB@vACdD]PI`@CbCGf@Cf@@^Hl@X|EpC??fBx@hAp@tC|BbB~BbBvB|CjDd@h@^n@`@l@vArALXDV@^cBz[m@pLGlB@^P|Ab@lB??dBdGFj@PTRnBFfAxA`N@l@Z`D?ZBzB@PLr@L|ALnCDpB??F`EBdFInJ[dMYjM@NRlACtBGtEI\\GxA[~J@AGhASlKKxDn@?|@F|@?p@Bt@G~BYdAEtBF`@D`@?d@Q\\Wd@c@A?vEwJHKJEL?JDLPbAlCnBdEf@lAlAnC??`AtBL`@hEpJZh@`@l@xE|ENXNp@vAtFhC|K??jBnIZhAdBfIDLDJBJLFt@hH~@zD?A??AAlBtHzBzI`BrGtAfGjA`HBZCAlEfR",
         "color":"DCE011",
-        "direction":"0",
+        "direction":"1",
         "duration":"00:37",
         "short_name": "2",
         "stops":[
@@ -615,136 +615,7 @@
     {
       "status": "ok",
       "data":[
-        {
-          "id":"1538",
-          "name":"D\u00e2mbovi\u021ba - Sta\u021bia Meteo",
-          "geometry":"crdvGkzj`C?AoEuQsCiMuD{NwAgGyAeGgAqFYqCOaB_@uBe@oBiAeF_E_QuCuL]q@c@k@?A}D}DQ[kBgEwA{C??oBaEuDoIqBcFIWe@kAEEICS@_BbE}@zB}@fBSZMLQ@a@GKCMBOHQXSVMHQ@_BE}@BSB??yBXs@DqAAyBIO@RyHTeJNaENwFFw@HcDBcDB_A??AAV{I??XgLLwCJkH@kDOaJ??MuD[gFOw@]qA[aDAm@yAaNGgASoBMQEWEWoAqEm@qBKo@Q}AA_@FmBBg@??PcDkBSwAO??kBQO@YNgG`EeEdBs@DO@aCn@oBv@q@Tc@De@D}@h@{@v@??iDfDmFdFC?kEqKeH_Q??}Oi`@",
-          "color":"DCE011",
-          "direction":"0",
-          "duration":"00:37",
-          "stops":[
-            {
-              "id":"13502",
-              "name":"Dambovita\/Dep. Tramvaie",
-              "latitude":"45.7403",
-              "longitude":"21.19664"
-            },
-            {
-              "id":"13504",
-              "name":"Crizantemelor",
-              "latitude":"45.7417191062",
-              "longitude":"21.2011707107"
-            },
-            {
-              "id":"13506",
-              "name":"Mangalia",
-              "latitude":"45.7426030093",
-              "longitude":"21.2036817948"
-            },
-            {
-              "id":"13508",
-              "name":"Iuliu Maniu",
-              "latitude":"45.74379",
-              "longitude":"21.20695"
-            },
-            {
-              "id":"13510",
-              "name":"Regele Carol\/Piata Iosefin",
-              "latitude":"45.74489",
-              "longitude":"21.21114"
-            },
-            {
-              "id":"13474",
-              "name":"Piata Mocioni\/Sinaia",
-              "latitude":"45.7463",
-              "longitude":"21.21544"
-            },
-            {
-              "id":"13476",
-              "name":"Piata Sfanta Maria",
-              "latitude":"45.74841",
-              "longitude":"21.21864"
-            },
-            {
-              "id":"13478",
-              "name":"Catedrala Metropolitana",
-              "latitude":"45.7511901042",
-              "longitude":"21.2236905376"
-            },
-            {
-              "id":"15420",
-              "name":"Spitalul de Copii",
-              "latitude":"45.75509",
-              "longitude":"21.22122"
-            },
-            {
-              "id":"13480",
-              "name":"Piata Timisoara 700",
-              "latitude":"45.75625",
-              "longitude":"21.22291"
-            },
-            {
-              "id":"13482",
-              "name":"Piata Libertatii",
-              "latitude":"45.75597",
-              "longitude":"21.22666"
-            },
-            {
-              "id":"13484",
-              "name":"Hotel Continental",
-              "latitude":"45.75573",
-              "longitude":"21.23199"
-            },
-            {
-              "id":"13486",
-              "name":"Prefectura Judetului Timis",
-              "latitude":"45.75562",
-              "longitude":"21.23843"
-            },
-            {
-              "id":"13488",
-              "name":"Parcul Poporului",
-              "latitude":"45.7567",
-              "longitude":"21.24463"
-            },
-            {
-              "id":"13490",
-              "name":"Piata Traian",
-              "latitude":"45.75749",
-              "longitude":"21.24902"
-            },
-            {
-              "id":"13511",
-              "name":"Piata Badea Cartan",
-              "latitude":"45.7623",
-              "longitude":"21.24772"
-            },
-            {
-              "id":"13512",
-              "name":"Gara Timisoara Est",
-              "latitude":"45.76673",
-              "longitude":"21.24535"
-            },
-            {
-              "id":"13513",
-              "name":"Politia Locala",
-              "latitude":"45.77009",
-              "longitude":"21.25204"
-            },
-            {
-              "id":"13514",
-              "name":"UMT",
-              "latitude":"45.77161",
-              "longitude":"21.25497"
-            },
-            {
-              "id":"13515",
-              "name":"Statia Meteo",
-              "latitude":"45.77186",
-              "longitude":"21.25956"
-            }
-          ]
-        },
+
         {
           "id":"1537",
           "name":"Sta\u021bia Meteo - D\u00e2mbovi\u021ba",
