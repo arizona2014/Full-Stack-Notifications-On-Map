@@ -594,9 +594,9 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [xxx, yyy, 0.0],
-          [xxx, yyy, 0.0],
-          [xxx, yyy, 0.0],
+          [21.25956, 45.77186, 0.0],
+          [21.26042, 45.76885, 0.0],
+          [21.26054, 45.76568, 0.0],
           [xxx, yyy, 0.0],
           [xxx, yyy, 0.0],
           [xxx, yyy, 0.0],
